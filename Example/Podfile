@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'JWCTableViewController_Example' do
+  pod 'JWCTableViewController', :path => '../'
+
+  target 'JWCTableViewController_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
