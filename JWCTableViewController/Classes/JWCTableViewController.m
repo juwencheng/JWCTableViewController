@@ -103,6 +103,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     JWCTableViewSectionData *sectionData = self.data[(NSUInteger) indexPath.section];
+    if (sectionData.itemHeight > 0) return sectionData.itemHeight;
     return [sectionData cellHeightWithIndex:indexPath.row];
 }
 

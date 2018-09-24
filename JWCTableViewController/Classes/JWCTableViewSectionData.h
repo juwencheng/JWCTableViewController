@@ -14,6 +14,8 @@
 
 + (instancetype)sectionDataWithHeader:(NSString *)header footer:(NSString *)footer children:(NSArray<JWCTableViewCellData *> *)children;
 
++ (instancetype)sectionDataWithChildren:(NSArray<JWCTableViewCellData *> *)children;
+
 /**
  * 获取 cellHeight
  * @param index cellHeight
@@ -51,6 +53,11 @@
  * footerView
  */
 @property(nonatomic, strong) UIView *footerView;
+
+/**
+ * itemHeight 使用时需注意，如果设置了 itemHeight，会优先使用itemHeight的高度
+ */
+@property(nonatomic, assign) CGFloat itemHeight;
 
 /**
  * section 下面的数据

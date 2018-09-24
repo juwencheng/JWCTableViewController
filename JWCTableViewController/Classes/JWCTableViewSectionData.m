@@ -18,7 +18,13 @@
 + (instancetype)sectionDataWithHeader:(NSString *)header footer:(NSString *)footer children:(NSArray<JWCTableViewCellData *> *)children {
     JWCTableViewSectionData *data = [[JWCTableViewSectionData alloc] init];
     data.header = header;
-    data.footer = header;
+    data.footer = footer;
+    data.children = children;
+    return data;
+}
+
++ (instancetype)sectionDataWithChildren:(NSArray<JWCTableViewCellData *> *)children {
+    JWCTableViewSectionData *data = [[JWCTableViewSectionData alloc] init];
     data.children = children;
     return data;
 }
