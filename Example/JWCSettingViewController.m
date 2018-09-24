@@ -61,7 +61,7 @@
 - (void)configureTableView {
     [super configureTableView];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
-    [JWCTableViewCell registTableView:self.tableView reuseCellClass:[JWCSettingCell class] identifier:@"JWCSettingCell"];
+    [self registReuserCellClass:[JWCSettingCell class] withCellDataClass:[JWCSettingCellItem class]];
 }
 
 @end

@@ -13,6 +13,7 @@
 @property(nonatomic, strong, readwrite) UITableView *tableView;
 @property(nonatomic, strong) NSMutableArray<JWCTableViewSectionData *> *data;
 @property(nonatomic, strong) JWCTableViewConfigure *configure;
+@property(nonatomic, strong) NSMutableDictionary *dataClass2CellClass;
 @end
 
 @implementation JWCTableViewController
@@ -61,6 +62,15 @@
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 }
 
+- (void)registReuserCellClass:(Class)cellClass withCellDataClass:(Class)cellDataClass {
+    self.dataClass2CellClass[NSStringFromClass(cellDataClass)] = NSStringFromClass(cellClass);
+    [self.tableView registerClass:cellClass forCellReuseIdentifier:NSStringFromClass(cellClass)];
+}
+
+- (JWCTableViewCell *)dequeueCellWithClassStr:(NSString *)cellClassStr {
+    return [self.tableView dequeueReusableCellWithIdentifier:cellClassStr];
+}
+
 #pragma mark tableview delegate & datasource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -75,11 +85,8 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     JWCTableViewSectionData *sectionData = self.data[(NSUInteger) indexPath.section];
     JWCTableViewCellData *item = sectionData.children[(NSUInteger) indexPath.row];
-
-    Class targetCell = [[item class] cellClass];
-
-    JWCTableViewCell *cell = [targetCell cellWithTableView:tableView reuseIdentifier:NSStringFromClass(targetCell)];
-
+    NSString *cellClassStr = [self.dataClass2CellClass objectForKey:NSStringFromClass([item class])];
+    JWCTableViewCell *cell = [self dequeueCellWithClassStr:cellClassStr];
     [cell configureData:item];
 
     return cell;
@@ -124,6 +131,22 @@
     [self.data addObjectsFromArray:data];
     [self.tableView reloadData];
 }
+/*
+- (void)validSectionData:(NSArray<JWCTableViewSectionData *> *)sectionData {
+    for (JWCTableViewSectionData *section in sectionData) {
+        [self validData:section.children];
+    }
+}
+
+- (void)validData:(NSArray<JWCTableViewCellData *> *)data {
+    for (JWCTableViewCellData *element in data) {
+        NSString *cellClassStr = self.dataClass2CellClass[NSStringFromClass([element class])];
+        if (cellClassStr.length == 0) {
+            @throw [NSException exceptionWithName:@"初始化错误" reason:@"请调用 registReuserCellClass:withCellDataClass 注册cell" userInfo:nil];
+        }
+        [element bindToCellClass: NSClassFromString(cellClassStr)];
+    }
+}*/
 
 - (void)appendData:(NSArray<JWCTableViewCellData *> *)data toSection:(NSInteger)section {
     if (self.data.count > section) {
@@ -168,6 +191,13 @@
         _data = [NSMutableArray array];
     }
     return _data;
+}
+
+- (NSMutableDictionary *)dataClass2CellClass {
+    if (!_dataClass2CellClass) {
+        _dataClass2CellClass = [NSMutableDictionary dictionary];
+    }
+    return _dataClass2CellClass;
 }
 
 @end

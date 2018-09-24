@@ -26,6 +26,4 @@ typedef void (^JWCTableViewCellTapOperation)(NSIndexPath *indexPath);
  */
 - (void)preLayout;
 
-+ (Class)cellClass;
-
 @end

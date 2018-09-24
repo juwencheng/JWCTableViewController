@@ -13,17 +13,6 @@
 // 如果支持范型就好了
 @interface JWCTableViewCell : UITableViewCell
 
-/**
- *  创建Cell
- *
- *  @param tableView tableView
- *
- *  @return JWCBaseCell
- */
-+ (JWCTableViewCell *)cellWithTableView:(UITableView *)tableView reuseIdentifier:(NSString *)reuseIdentifier;
-
-+ (void)registTableView:(UITableView *)tableView reuseCellClass:(Class)cellClass identifier:(NSString *)identifier;
-
 - (void)configureData:(JWCTableViewCellData *)data;
 
 @property(nonatomic, strong, readonly) JWCTableViewCellData *data;

@@ -15,15 +15,6 @@
 
 @implementation JWCTableViewCell
 
-+ (JWCTableViewCell *)cellWithTableView:(UITableView *)tableView reuseIdentifier:(NSString *)reuseIdentifier; {
-    JWCTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifier];
-    return cell;
-}
-
-+ (void)registTableView:(UITableView *)tableView reuseCellClass:(Class)cellClass identifier:(NSString *)identifier {
-    [tableView registerClass:cellClass forCellReuseIdentifier:identifier];
-}
-
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {

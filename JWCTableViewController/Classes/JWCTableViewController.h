@@ -69,6 +69,8 @@
  */
 - (void)configureTableView;
 
+- (void)registReuserCellClass:(Class)cellClass withCellDataClass:(Class)cellDataClass;
+
 /**
  * 快捷方法生成 JWCTableViewController
  * @param configure JWCTableViewConfigure
@@ -77,5 +79,6 @@
 + (instancetype)tableViewControllerWithConfigure:(JWCTableViewConfigure *)configure;
 
 @property(nonatomic, strong, readonly) UITableView *tableView;
+
 
 @end

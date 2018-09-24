@@ -9,6 +9,10 @@
 #import "JWCTableViewCellData.h"
 #import "JWCTableViewCell.h"
 
+@interface JWCTableViewCellData()
+@property(nonatomic, readwrite) Class cellClass;
+@end
+
 @implementation JWCTableViewCellData
 
 - (CGFloat)cellHeight {
@@ -17,10 +21,6 @@
 
 - (void)preLayout {
     // 子类实现，计算高度
-}
-
-+ (Class)cellClass {
-    return [JWCTableViewCell class];
 }
 
 @end
