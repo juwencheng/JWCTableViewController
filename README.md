@@ -9,6 +9,12 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+## Usage
+### 类简介
+|类名|作用|
+|-|-|
+|JWCTableViewController||
+
 ## Requirements
 
 ## Installation

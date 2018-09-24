@@ -7,12 +7,19 @@
 //
 
 #import "JWCAppDelegate.h"
+#import "JWCSettingViewController.h"
+
 
 @implementation JWCAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    [_window makeKeyAndVisible];
+    JWCTableViewConfigure *configure = [[JWCTableViewConfigure alloc] init];
+    configure.groupStyle = YES;
+    JWCSettingViewController *vc = [JWCSettingViewController tableViewControllerWithConfigure:configure];
+    _window.rootViewController = vc;
     return YES;
 }
 

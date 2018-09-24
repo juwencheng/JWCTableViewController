@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29C56B2021586409002012CB /* JWCSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C56B1A21586408002012CB /* JWCSettingViewController.m */; };
+		29C56B2121586409002012CB /* JWCSettingCellItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C56B1D21586409002012CB /* JWCSettingCellItem.m */; };
+		29C56B2221586409002012CB /* JWCSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C56B1F21586409002012CB /* JWCSettingCell.m */; };
+		29C56B25215871EE002012CB /* JWCSettingSectionData.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C56B24215871EE002012CB /* JWCSettingSectionData.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -37,11 +41,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		29C56B1A21586408002012CB /* JWCSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWCSettingViewController.m; sourceTree = SOURCE_ROOT; };
+		29C56B1B21586408002012CB /* JWCSettingCellItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWCSettingCellItem.h; sourceTree = SOURCE_ROOT; };
+		29C56B1C21586408002012CB /* JWCSettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWCSettingCell.h; sourceTree = SOURCE_ROOT; };
+		29C56B1D21586409002012CB /* JWCSettingCellItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWCSettingCellItem.m; sourceTree = SOURCE_ROOT; };
+		29C56B1E21586409002012CB /* JWCSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWCSettingViewController.h; sourceTree = SOURCE_ROOT; };
+		29C56B1F21586409002012CB /* JWCSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWCSettingCell.m; sourceTree = SOURCE_ROOT; };
+		29C56B23215871EE002012CB /* JWCSettingSectionData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWCSettingSectionData.h; sourceTree = "<group>"; };
+		29C56B24215871EE002012CB /* JWCSettingSectionData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWCSettingSectionData.m; sourceTree = "<group>"; };
 		43BE32F5B5A119EAB68F48BF /* Pods_JWCTableViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JWCTableViewController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43F64C36A6596AE48D82B2AA /* Pods_JWCTableViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JWCTableViewController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45EB6E2267D66922DEE7C3F7 /* Pods-JWCTableViewController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWCTableViewController_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JWCTableViewController_Example/Pods-JWCTableViewController_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		580249714BFB246E1B3A0322 /* Pods-JWCTableViewController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWCTableViewController_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-JWCTableViewController_Example/Pods-JWCTableViewController_Example.release.xcconfig"; sourceTree = "<group>"; };
-		5DFE884249594B2A58D069ED /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		5DFE884249594B2A58D069ED /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* JWCTableViewController_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JWCTableViewController_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,10 +74,10 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		821B6A048D51EAE4406E16D0 /* JWCTableViewController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = JWCTableViewController.podspec; path = ../JWCTableViewController.podspec; sourceTree = "<group>"; };
+		821B6A048D51EAE4406E16D0 /* JWCTableViewController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JWCTableViewController.podspec; path = ../JWCTableViewController.podspec; sourceTree = "<group>"; };
 		8340D30EACC738C2C5AD8E9B /* Pods-JWCTableViewController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWCTableViewController_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JWCTableViewController_Tests/Pods-JWCTableViewController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B149DA35D021D566A820F4BF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		B149DA35D021D566A820F4BF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		F808F840532EF8E569B735D2 /* Pods-JWCTableViewController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWCTableViewController_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JWCTableViewController_Tests/Pods-JWCTableViewController_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,8 +155,16 @@
 		6003F593195388D20070C39A /* Example for JWCTableViewController */ = {
 			isa = PBXGroup;
 			children = (
+				29C56B1C21586408002012CB /* JWCSettingCell.h */,
+				29C56B1F21586409002012CB /* JWCSettingCell.m */,
+				29C56B1B21586408002012CB /* JWCSettingCellItem.h */,
+				29C56B1D21586409002012CB /* JWCSettingCellItem.m */,
+				29C56B1E21586409002012CB /* JWCSettingViewController.h */,
+				29C56B1A21586408002012CB /* JWCSettingViewController.m */,
 				6003F59C195388D20070C39A /* JWCAppDelegate.h */,
 				6003F59D195388D20070C39A /* JWCAppDelegate.m */,
+				29C56B23215871EE002012CB /* JWCSettingSectionData.h */,
+				29C56B24215871EE002012CB /* JWCSettingSectionData.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* JWCViewController.h */,
 				6003F5A6195388D20070C39A /* JWCViewController.m */,
@@ -374,8 +394,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29C56B25215871EE002012CB /* JWCSettingSectionData.m in Sources */,
 				6003F59E195388D20070C39A /* JWCAppDelegate.m in Sources */,
+				29C56B2221586409002012CB /* JWCSettingCell.m in Sources */,
 				6003F5A7195388D20070C39A /* JWCViewController.m in Sources */,
+				29C56B2021586409002012CB /* JWCSettingViewController.m in Sources */,
+				29C56B2121586409002012CB /* JWCSettingCellItem.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

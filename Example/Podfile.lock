@@ -1,0 +1,27 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - JWCTableViewController (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - JWCTableViewController (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  JWCTableViewController:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  JWCTableViewController: 241100045a62056ba82a5e12f1586b045a1b1e71
+
+PODFILE CHECKSUM: eb91d8bf42db3ef85989c7a63cfc99faa2b672ff
+
+COCOAPODS: 1.5.3
