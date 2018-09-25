@@ -13,9 +13,8 @@
 
 - (void)customizeTableViewConstraints:(UITableView *)tableView;
 
-- (void)customizeTableViewDelegateAndDataSource:(UITableView *)tableView;
-
 - (void)customizeTableViewStyle:(UITableView *)tableView;
+
 @end
 
 

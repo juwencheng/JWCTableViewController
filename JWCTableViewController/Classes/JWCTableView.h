@@ -1,19 +1,16 @@
 //
-//  JWCTableViewController.h
-//  TableView封装
-//
-//  Created by Ju on 14-8-20.
-//  Copyright (c) 2014年 dono. All rights reserved.
+// Created by 鞠汶成 on 2018/9/25.
 //
 
+#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "JWCTableViewSectionData.h"
-#import "JWCTableViewCell.h"
-#import "JWCTableView.h"
 
-@protocol JWCTableViewControllerDelegate;
+@class JWCTableViewSectionData;
+@class JWCTableViewCellData;
 
-@interface JWCTableViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
+
+@interface JWCTableView : UITableView
+
 /**
  * 刷新列表数据
  * @param data NSArray<JWCTableViewSectionData *>
@@ -46,16 +43,6 @@
  */
 - (void)removeData:(NSArray <JWCTableViewCellData *> *)data fromSection:(NSInteger)section;
 
-/**
- * 快捷方法生成 JWCTableViewController
- * @param style UITableViewStyle
- * @return JWCTableViewController
- */
-+ (instancetype)tableViewControllerWithStyle:(UITableViewStyle)style;
-
-@property (nonatomic, weak) id<JWCTableViewControllerDelegate> delegate;
-
-@property(nonatomic, strong, readonly) JWCTableView *tableView;
-
+- (void)registReuserCellClass:(Class)cellClass withCellDataClass:(Class)cellDataClass;
 
 @end

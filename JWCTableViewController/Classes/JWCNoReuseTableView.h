@@ -1,19 +1,17 @@
 //
-//  JWCNoReuseViewController.h
-//  JWCTableViewController_Example
+//  JWCNoReuseTableView.h
+//  JWCTableViewController
 //
 //  Created by 鞠汶成 on 2018/9/25.
-//  Copyright © 2018年 Juwencheng. All rights reserved.
-//  不使用复用机制，常用与菜单的tableView
+//
 
 #import <UIKit/UIKit.h>
-#import "JWCTableViewControllerDelegate.h"
 
 @class JWCTableViewSectionCell;
 @class JWCTableViewCell;
-@class JWCNoReuseTableView;
 
-@interface JWCNoReuseViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
+@interface JWCNoReuseTableView : UITableView
+
 /**
  * 刷新列表数据
  * @param data NSArray<JWCTableViewSectionCell *>
@@ -46,14 +44,5 @@
  */
 - (void)removeData:(NSArray <JWCTableViewCell *> *)data fromSection:(NSInteger)section;
 
-/**
- * 快捷方法生成 JWCTableViewController
- * @param style UITableViewStyle
- * @return JWCTableViewController
- */
-+ (instancetype)tableViewControllerWithStyle:(UITableViewStyle)style;
 
-@property (nonatomic, weak) id<JWCTableViewControllerDelegate> delegate;
-
-@property(nonatomic, strong, readonly) JWCNoReuseTableView *tableView;
 @end
