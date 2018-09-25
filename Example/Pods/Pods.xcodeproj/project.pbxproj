@@ -7,44 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		046614D1F936EBAEFE5FD4B9AE6D1969 /* JWCNoReuseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 326F22AECE0E022E729790090D326CA3 /* JWCNoReuseViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		051A816D6DD0CAE13496DDCFE0829167 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 85E250EF19C5B5671AEC10BEB508D087 /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		092C653E0B6E76170139E191CF3CAD48 /* JWCTableViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 35BB198C5D51CCDFC0FCF0BE41384E9D /* JWCTableViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		094973D2D2F1E3B2E772F93C8147C6B9 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EECE81A9AEC1ED1057A9C3C88DBCEBE /* UIApplication+StrictKeyWindow.m */; };
-		0E9613CBF49AD91E7903507D33271000 /* JWCTableViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 45960CA76BF206FA3FA44F3791C8BBBF /* JWCTableViewController-dummy.m */; };
+		0F79481F56BEC979F2CE256C662BAF30 /* JWCTableViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 162CDFB1506C0E02CF9CED29152B3DB4 /* JWCTableViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15E4623437E727170F30364454E1DF15 /* JWCTableViewSectionData.m in Sources */ = {isa = PBXBuildFile; fileRef = C1907911B1A1106D7922F00F257A1AAB /* JWCTableViewSectionData.m */; };
 		18EA4E0D8B74F2B2BBF8F39B49F49BF9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7843C520ED7D11392D872D57034A1BC /* XCTest.framework */; };
 		1AB7934C16CE49DE196FFC7BE7278287 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97545C39C4A5EE2631DD9FFECE76A40 /* SwiftSupport.swift */; };
+		20BF9294B01F6BDE3346081B2D78B529 /* JWCTableViewSectionCell.h in Headers */ = {isa = PBXBuildFile; fileRef = BE027D0B287ADF6F672EA4259E3159A6 /* JWCTableViewSectionCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2B35ED6C70E599B31F9F1F8AC6462A22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1A94602875A48A997AD3F08A33E6EAA /* Foundation.framework */; };
 		2F485B69F51E4F723A38410F31F08550 /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1374B79237CAC07693E99442FBED1F15 /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		32D87CBA2C0F0379B63665559503F73B /* JWCTableViewSectionData.h in Headers */ = {isa = PBXBuildFile; fileRef = 04BF165D457CC626841F4DBD7323AB26 /* JWCTableViewSectionData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		35DD05FD595A6FE7F5A0692D12E319DC /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CEF7D6C5E08AB80E58DABC75D882BC /* UIImage+Diff.m */; };
 		3623912107D4C0007B8817794C58071E /* Pods-JWCTableViewController_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 967D7C15DE5A1577B736E6A863E14CD2 /* Pods-JWCTableViewController_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		37937D91612867FEB2D5C63BBD3D965F /* JWCTableViewCellData.h in Headers */ = {isa = PBXBuildFile; fileRef = 93BA5C27FF6BA45B69A50F893B92BDC2 /* JWCTableViewCellData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B1B78ECED02752FF51ED48A81123AB7 /* JWCTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 785B9DAFDFB52B33D4ECAB2B7C881D59 /* JWCTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		421CDD701AEE0F2458A84200366CDD0F /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B161931541BFE46DFEA2092EDDDA815 /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		47DEE95708BDBD11436162D166CD192E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB6A925DF90E5500E7BDCC094FEBEA7 /* UIKit.framework */; };
+		4922EF3A39DAFD01137FB14234BA56DA /* JWCTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66366371AA636CFCE2015A33DBD3E07D /* JWCTableViewController.m */; };
 		506D761F91EC3583789A837C559972FE /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4792533D7EE0F440EE722DA4999E845C /* FBSnapshotTestCase-dummy.m */; };
-		593261B3B2AD84104472B265A4502296 /* JWCTableViewSectionData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F237373345F7EDC3D0C8CC3F4878312 /* JWCTableViewSectionData.m */; };
 		5BC12F69E33ABA27B9E0B78128CE336D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D77B07CA7D221E3EC46B93C00BF37CDE /* QuartzCore.framework */; };
 		69DA8B003216466C60F029CBD79897F1 /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B5E22F9517F21D3A0251F88FCAB281E /* UIImage+Compare.m */; };
+		7533C2652B2847E08F68B66EB66ACFAA /* JWCTableViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DEA62EC2624EC395EF063E92491D1F5 /* JWCTableViewController-dummy.m */; };
 		756564ABAF2892FE7140C92A1CDDCF65 /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBFBDCC891B770A2AC9EF0FB164B751 /* UIImage+Snapshot.m */; };
-		854F762C6B736E50A70E7346DA3D93D4 /* JWCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A54D325C8661DB50D80FA05D599BDF /* JWCTableViewCell.m */; };
+		780CB8280CFCEFAC8D26017B02CE3AE0 /* JWCTableViewSectionData.h in Headers */ = {isa = PBXBuildFile; fileRef = 48AE327770E5F2EE860973E81D59E00B /* JWCTableViewSectionData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F96A55B3702B0AE532A0EFC357A0EEA /* JWCTableViewCellData.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DD36FE3FBFC9916E5775A491876C8B0 /* JWCTableViewCellData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B2E822DF4023A8813346A50110FC3EB /* JWCTableViewSectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1548A267FAC98E6523579095CF58A7FE /* JWCTableViewSectionCell.m */; };
+		9456F51C22C9FECF5A748294821B2548 /* JWCNoReuseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B13F95DF5112EB7F6BA0056AF6A3872 /* JWCNoReuseViewController.m */; };
+		960CEDD2251796B7901FE78402F734DF /* JWCTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 84316406E975381B653F38E72238ED76 /* JWCTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9673CF780F48C8E4EC2A331717B1F67C /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = E37899BD4B349060AA147E2A3721D3A2 /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A4F69F3477A935285620AC3031C5C848 /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 052258A488A96C35531FAC73C4F42924 /* FBSnapshotTestController.m */; };
-		A775F57AC5AA0420017046E9CD5120F1 /* JWCTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D58FE3B02C320AC31ACFDA3E0A9658D8 /* JWCTableViewController.m */; };
-		ACA2C39C03267BEC59FAD0387E3B3D57 /* JWCTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A244918BEF9637CAFFA75A396B6EDD5 /* JWCTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7DFEB0E0C9C9FF2860A1AAD7A6AB05D /* JWCTableViewCellData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E78B4638259FAA537F32DCD43307A7E /* JWCTableViewCellData.m */; };
 		B35995B0B8ACC27550B2CFC97439A4E9 /* Pods-JWCTableViewController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E6629126F941372A439881A1BD3A3DF /* Pods-JWCTableViewController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B758FB09FE2C06C1B8E36A71A9D76D41 /* FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A11D5B54955E3381F067364E427B571A /* FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA4D7B3AC4D4DE65A4EFD68D7C29FF0F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1A94602875A48A997AD3F08A33E6EAA /* Foundation.framework */; };
 		BC952FC04FC963C1294DCD619C9B6B3B /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = B9109B8B333B5A1A3E92EFC09EDC10AC /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		BE14F2198CDB0DAD98A567981D21C7A1 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 39577E2B806B8B2D019998DE60728F63 /* FBSnapshotTestCase.m */; };
 		BFCE460CC33E8872B7156D4166340178 /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E3DB4D092B985E76E227F7F313C6981 /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C86C1C6492453DE58D87C133F84A93E0 /* JWCTableViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D7E26CC0AD64B576C0B8F1FA2EE05C71 /* JWCTableViewControllerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CAFA5E486BCE117A7D8C0FBF9DA6666B /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = 432938111B6FF0189EFFEDF2F845B308 /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		DAD9A0E0F40D3984B78A22F8D3CDAB45 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1A94602875A48A997AD3F08A33E6EAA /* Foundation.framework */; };
 		DB7A106243AC974FC7EBEB00B506C786 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 58A2557E7CE20AACCD1B28B1CD1F920D /* FBSnapshotTestCasePlatform.m */; };
 		E3DD5D7CF71E75AA85D2DBFAE6B630AE /* Pods-JWCTableViewController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BFFA154AF5E701B1A1FEF9B85B9212 /* Pods-JWCTableViewController_Tests-dummy.m */; };
 		E6646A6BFDE92CBF64FFAE7AA26F62F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1A94602875A48A997AD3F08A33E6EAA /* Foundation.framework */; };
-		EE5B14DB599553DA8C6591959C685F50 /* JWCTableViewCellData.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF884274C054ADA071725C9A8E1EFC3 /* JWCTableViewCellData.m */; };
+		F7BF2F43E7900C082067890D48974FD8 /* JWCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2635CB71792F6673D93B9E6DFB507E0A /* JWCTableViewCell.m */; };
 		F846F9E38E108AE812C70188FA5E6A39 /* Pods-JWCTableViewController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EB3072533FCF3F19B605C778609F2AC /* Pods-JWCTableViewController_Example-dummy.m */; };
-		FA5B5D79048DF730F9A77CDA7608CAA5 /* JWCTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A7944C41FDEBA625FF669E23EDDA0D47 /* JWCTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FDA0BDCFCA9B936EBD076C23C250A117 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1A94602875A48A997AD3F08A33E6EAA /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +57,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C5CDC5878C4F60A130B9F99A34943413;
+			remoteGlobalIDString = 132500ADA26ECC02DD843281C9545F53;
 			remoteInfo = JWCTableViewController;
 		};
 		E6EF49F43C0CDA4CD48103312089504B /* PBXContainerItemProxy */ = {
@@ -72,70 +77,75 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04BF165D457CC626841F4DBD7323AB26 /* JWCTableViewSectionData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JWCTableViewSectionData.h; path = JWCTableViewController/Classes/JWCTableViewSectionData.h; sourceTree = "<group>"; };
 		052258A488A96C35531FAC73C4F42924 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
 		0B161931541BFE46DFEA2092EDDDA815 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
+		0E78B4638259FAA537F32DCD43307A7E /* JWCTableViewCellData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JWCTableViewCellData.m; path = JWCTableViewController/Classes/JWCTableViewCellData.m; sourceTree = "<group>"; };
 		1374B79237CAC07693E99442FBED1F15 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
-		144C5AA2B0185A92E7528112990B9BA2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		2338BE2C456248062723C71C220CFCB9 /* JWCTableViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JWCTableViewController.xcconfig; sourceTree = "<group>"; };
+		1548A267FAC98E6523579095CF58A7FE /* JWCTableViewSectionCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JWCTableViewSectionCell.m; path = JWCTableViewController/Classes/JWCTableViewSectionCell.m; sourceTree = "<group>"; };
+		162CDFB1506C0E02CF9CED29152B3DB4 /* JWCTableViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JWCTableViewController-umbrella.h"; sourceTree = "<group>"; };
+		1B13F95DF5112EB7F6BA0056AF6A3872 /* JWCNoReuseViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JWCNoReuseViewController.m; path = JWCTableViewController/Classes/JWCNoReuseViewController.m; sourceTree = "<group>"; };
+		1E9FA056ADF7C2EB1829130CEDD42FC0 /* JWCTableViewController.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = JWCTableViewController.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2635CB71792F6673D93B9E6DFB507E0A /* JWCTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JWCTableViewCell.m; path = JWCTableViewController/Classes/JWCTableViewCell.m; sourceTree = "<group>"; };
 		29A9144B3182FF607F6F66D43E4563B9 /* Pods-JWCTableViewController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JWCTableViewController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		2EECE81A9AEC1ED1057A9C3C88DBCEBE /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
-		35BB198C5D51CCDFC0FCF0BE41384E9D /* JWCTableViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JWCTableViewController-umbrella.h"; sourceTree = "<group>"; };
-		37D61BD18784E44A7209276580481B86 /* Pods_JWCTableViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JWCTableViewController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		326F22AECE0E022E729790090D326CA3 /* JWCNoReuseViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JWCNoReuseViewController.h; path = JWCTableViewController/Classes/JWCNoReuseViewController.h; sourceTree = "<group>"; };
+		37D61BD18784E44A7209276580481B86 /* Pods_JWCTableViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JWCTableViewController_Tests.framework; path = "Pods-JWCTableViewController_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		39577E2B806B8B2D019998DE60728F63 /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
-		3AF884274C054ADA071725C9A8E1EFC3 /* JWCTableViewCellData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JWCTableViewCellData.m; path = JWCTableViewController/Classes/JWCTableViewCellData.m; sourceTree = "<group>"; };
 		3B5E22F9517F21D3A0251F88FCAB281E /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
 		3DBFBDCC891B770A2AC9EF0FB164B751 /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
 		432938111B6FF0189EFFEDF2F845B308 /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
-		45960CA76BF206FA3FA44F3791C8BBBF /* JWCTableViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JWCTableViewController-dummy.m"; sourceTree = "<group>"; };
 		4792533D7EE0F440EE722DA4999E845C /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
+		48AE327770E5F2EE860973E81D59E00B /* JWCTableViewSectionData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JWCTableViewSectionData.h; path = JWCTableViewController/Classes/JWCTableViewSectionData.h; sourceTree = "<group>"; };
+		4DEA62EC2624EC395EF063E92491D1F5 /* JWCTableViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JWCTableViewController-dummy.m"; sourceTree = "<group>"; };
 		4EB3072533FCF3F19B605C778609F2AC /* Pods-JWCTableViewController_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JWCTableViewController_Example-dummy.m"; sourceTree = "<group>"; };
-		5178E3BA445D746E4C003C109AE6A967 /* JWCTableViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JWCTableViewController-prefix.pch"; sourceTree = "<group>"; };
-		51849FD008DFA0CACBBDB3C6D9BA3BEA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		58A2557E7CE20AACCD1B28B1CD1F920D /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
-		5D4A7C8B2F787CD6A843EC603E89D140 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		60AE8A8A8CD9E75D3F4CB1746BDCB2FA /* JWCTableViewController.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = JWCTableViewController.podspec; sourceTree = "<group>"; };
 		654B4CD775EBAA5504236AD011B55B3F /* Pods-JWCTableViewController_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JWCTableViewController_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		66A54D325C8661DB50D80FA05D599BDF /* JWCTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JWCTableViewCell.m; path = JWCTableViewController/Classes/JWCTableViewCell.m; sourceTree = "<group>"; };
+		66366371AA636CFCE2015A33DBD3E07D /* JWCTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JWCTableViewController.m; path = JWCTableViewController/Classes/JWCTableViewController.m; sourceTree = "<group>"; };
 		67E276593855381568F725E69496F29C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6F237373345F7EDC3D0C8CC3F4878312 /* JWCTableViewSectionData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JWCTableViewSectionData.m; path = JWCTableViewController/Classes/JWCTableViewSectionData.m; sourceTree = "<group>"; };
+		785B9DAFDFB52B33D4ECAB2B7C881D59 /* JWCTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JWCTableViewCell.h; path = JWCTableViewController/Classes/JWCTableViewCell.h; sourceTree = "<group>"; };
+		78616CA7E4277352B89C6A6C36173F8A /* JWCTableViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JWCTableViewController-prefix.pch"; sourceTree = "<group>"; };
 		79BFFA154AF5E701B1A1FEF9B85B9212 /* Pods-JWCTableViewController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JWCTableViewController_Tests-dummy.m"; sourceTree = "<group>"; };
 		7B37D7C695D5C6C47A7C093595CD4F06 /* FBSnapshotTestCase.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.xcconfig; sourceTree = "<group>"; };
 		7E3DB4D092B985E76E227F7F313C6981 /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
-		7FBEFB955B0213FD6FEE45A00184800E /* Pods_JWCTableViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JWCTableViewController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FBEFB955B0213FD6FEE45A00184800E /* Pods_JWCTableViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JWCTableViewController_Example.framework; path = "Pods-JWCTableViewController_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		821D586A5547B1967AB7B9B95FC5E34A /* Pods-JWCTableViewController_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JWCTableViewController_Tests-resources.sh"; sourceTree = "<group>"; };
+		84316406E975381B653F38E72238ED76 /* JWCTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JWCTableViewController.h; path = JWCTableViewController/Classes/JWCTableViewController.h; sourceTree = "<group>"; };
 		85E250EF19C5B5671AEC10BEB508D087 /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
-		8A244918BEF9637CAFFA75A396B6EDD5 /* JWCTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JWCTableViewCell.h; path = JWCTableViewController/Classes/JWCTableViewCell.h; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		93BA5C27FF6BA45B69A50F893B92BDC2 /* JWCTableViewCellData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JWCTableViewCellData.h; path = JWCTableViewController/Classes/JWCTableViewCellData.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		967D7C15DE5A1577B736E6A863E14CD2 /* Pods-JWCTableViewController_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JWCTableViewController_Tests-umbrella.h"; sourceTree = "<group>"; };
 		9685B0B4E7BA3F1CFFD7B20CE9353AAC /* Pods-JWCTableViewController_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JWCTableViewController_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		99852F93E4054B7C5C3C8B18281F4DB6 /* Pods-JWCTableViewController_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JWCTableViewController_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9D064BA4702D815FC9B525436B33017C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DD36FE3FBFC9916E5775A491876C8B0 /* JWCTableViewCellData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JWCTableViewCellData.h; path = JWCTableViewController/Classes/JWCTableViewCellData.h; sourceTree = "<group>"; };
 		9E6629126F941372A439881A1BD3A3DF /* Pods-JWCTableViewController_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JWCTableViewController_Example-umbrella.h"; sourceTree = "<group>"; };
 		A11D5B54955E3381F067364E427B571A /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
 		A3C60AC93E3C3F85742693860030D5BA /* Pods-JWCTableViewController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JWCTableViewController_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		A5A52D62F4DEA578FBC8461A223DE2E5 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A7944C41FDEBA625FF669E23EDDA0D47 /* JWCTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JWCTableViewController.h; path = JWCTableViewController/Classes/JWCTableViewController.h; sourceTree = "<group>"; };
+		A5A52D62F4DEA578FBC8461A223DE2E5 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase.framework; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3A5BAD3BAF444993C3BAF45BF9722D6 /* Pods-JWCTableViewController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JWCTableViewController_Example.release.xcconfig"; sourceTree = "<group>"; };
+		B45B6C15A59B6D939128D654C9EB89E4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		B9109B8B333B5A1A3E92EFC09EDC10AC /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
 		B9CEF7D6C5E08AB80E58DABC75D882BC /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
 		BBB6A925DF90E5500E7BDCC094FEBEA7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		BE027D0B287ADF6F672EA4259E3159A6 /* JWCTableViewSectionCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JWCTableViewSectionCell.h; path = JWCTableViewController/Classes/JWCTableViewSectionCell.h; sourceTree = "<group>"; };
 		BE23D86CF2D2B1CD38A53D6BE77F8B46 /* Pods-JWCTableViewController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JWCTableViewController_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C10F9CC3EC953D340C586D0B0DA7BEE0 /* Pods-JWCTableViewController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JWCTableViewController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C1907911B1A1106D7922F00F257A1AAB /* JWCTableViewSectionData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JWCTableViewSectionData.m; path = JWCTableViewController/Classes/JWCTableViewSectionData.m; sourceTree = "<group>"; };
 		C1A94602875A48A997AD3F08A33E6EAA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		C5A419F25679BB89E128CBF5A6697C99 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D58FE3B02C320AC31ACFDA3E0A9658D8 /* JWCTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JWCTableViewController.m; path = JWCTableViewController/Classes/JWCTableViewController.m; sourceTree = "<group>"; };
+		CC5414A638047C8285D1FA1FA0E03880 /* JWCTableViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JWCTableViewController.modulemap; sourceTree = "<group>"; };
+		D09DC54EB1739ECEA6E598BA90B3D895 /* JWCTableViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JWCTableViewController.xcconfig; sourceTree = "<group>"; };
 		D77B07CA7D221E3EC46B93C00BF37CDE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		D7C2D55FBE0D4CB8D9ECEDE26D660A9D /* Pods-JWCTableViewController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JWCTableViewController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		D7E26CC0AD64B576C0B8F1FA2EE05C71 /* JWCTableViewControllerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JWCTableViewControllerDelegate.h; path = JWCTableViewController/Classes/JWCTableViewControllerDelegate.h; sourceTree = "<group>"; };
+		D927C55B1E646FD967B2C395556C152A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		D97545C39C4A5EE2631DD9FFECE76A40 /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
 		E16429B1A9E28A299261B148BB559FA3 /* Pods-JWCTableViewController_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JWCTableViewController_Example-resources.sh"; sourceTree = "<group>"; };
-		E3303F413A09002F1EE6EBA06BBB915C /* JWCTableViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JWCTableViewController.modulemap; sourceTree = "<group>"; };
 		E34EEF411F65A4830BF0A4F168C8E71A /* Pods-JWCTableViewController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JWCTableViewController_Example-frameworks.sh"; sourceTree = "<group>"; };
 		E37899BD4B349060AA147E2A3721D3A2 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
 		E3E4554D33960680DA9C556D7E81C537 /* Pods-JWCTableViewController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JWCTableViewController_Example.modulemap"; sourceTree = "<group>"; };
-		E4E5BF1244E3087FEE5CF38478278848 /* JWCTableViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JWCTableViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4E5BF1244E3087FEE5CF38478278848 /* JWCTableViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JWCTableViewController.framework; path = JWCTableViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7843C520ED7D11392D872D57034A1BC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E9F149A8E342698EC67F6491F3424677 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF519A026B10AC73ABBE6E658308B29D /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
 		F10CBDEE32E5F6BDECFB3D41F7DD0B03 /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
 		F20736430080ABD80EB576DE06A29702 /* Pods-JWCTableViewController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JWCTableViewController_Tests.modulemap"; sourceTree = "<group>"; };
@@ -169,11 +179,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4C74B824A92F6632B523E8E8EDAC43C6 /* Frameworks */ = {
+		AEFB00532798D8839E098555E778E8EB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDA0BDCFCA9B936EBD076C23C250A117 /* Foundation.framework in Frameworks */,
+				BA4D7B3AC4D4DE65A4EFD68D7C29FF0F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +205,18 @@
 				3288FCB8E15F6401DE6220AE5CA1D27B /* Support Files */,
 				99E46DD4AB2256791F111C718CB0EEF8 /* SwiftSupport */,
 			);
+			name = FBSnapshotTestCase;
 			path = FBSnapshotTestCase;
+			sourceTree = "<group>";
+		};
+		31822B82CD9EB7BF789E86C8533B1804 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				1E9FA056ADF7C2EB1829130CEDD42FC0 /* JWCTableViewController.podspec */,
+				B45B6C15A59B6D939128D654C9EB89E4 /* LICENSE */,
+				D927C55B1E646FD967B2C395556C152A /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		3288FCB8E15F6401DE6220AE5CA1D27B /* Support Files */ = {
@@ -223,40 +244,24 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		719B2D230FFAD35AFC02A47F6F4AA789 /* Support Files */ = {
+		7D0E4B2A27D99D5BF571D6411B2D5514 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5D4A7C8B2F787CD6A843EC603E89D140 /* Info.plist */,
-				E3303F413A09002F1EE6EBA06BBB915C /* JWCTableViewController.modulemap */,
-				2338BE2C456248062723C71C220CFCB9 /* JWCTableViewController.xcconfig */,
-				45960CA76BF206FA3FA44F3791C8BBBF /* JWCTableViewController-dummy.m */,
-				5178E3BA445D746E4C003C109AE6A967 /* JWCTableViewController-prefix.pch */,
-				35BB198C5D51CCDFC0FCF0BE41384E9D /* JWCTableViewController-umbrella.h */,
+				F8319F88639504893F6B6747EEC555EE /* JWCTableViewController */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/JWCTableViewController";
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				FD70A8AC684B76321E5D0935EF2F6EF0 /* Development Pods */,
+				7D0E4B2A27D99D5BF571D6411B2D5514 /* Development Pods */,
 				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
 				FBD2D672921284E66F309CA3462F84D6 /* Pods */,
 				B3992AAAAB47EBA1352224095C42398F /* Products */,
 				AE65FA36BDD1F35C95B694322BE5AA90 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		85EF8A6CE5DB713513488489F69A681C /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				60AE8A8A8CD9E75D3F4CB1746BDCB2FA /* JWCTableViewController.podspec */,
-				51849FD008DFA0CACBBDB3C6D9BA3BEA /* LICENSE */,
-				144C5AA2B0185A92E7528112990B9BA2 /* README.md */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		8ACD15829066D2C569AF33881B221EF5 /* Pods-JWCTableViewController_Example */ = {
@@ -275,24 +280,6 @@
 			);
 			name = "Pods-JWCTableViewController_Example";
 			path = "Target Support Files/Pods-JWCTableViewController_Example";
-			sourceTree = "<group>";
-		};
-		913B005137FBC3929DEF7916B4346E3F /* JWCTableViewController */ = {
-			isa = PBXGroup;
-			children = (
-				8A244918BEF9637CAFFA75A396B6EDD5 /* JWCTableViewCell.h */,
-				66A54D325C8661DB50D80FA05D599BDF /* JWCTableViewCell.m */,
-				93BA5C27FF6BA45B69A50F893B92BDC2 /* JWCTableViewCellData.h */,
-				3AF884274C054ADA071725C9A8E1EFC3 /* JWCTableViewCellData.m */,
-				A7944C41FDEBA625FF669E23EDDA0D47 /* JWCTableViewController.h */,
-				D58FE3B02C320AC31ACFDA3E0A9658D8 /* JWCTableViewController.m */,
-				04BF165D457CC626841F4DBD7323AB26 /* JWCTableViewSectionData.h */,
-				6F237373345F7EDC3D0C8CC3F4878312 /* JWCTableViewSectionData.m */,
-				85EF8A6CE5DB713513488489F69A681C /* Pod */,
-				719B2D230FFAD35AFC02A47F6F4AA789 /* Support Files */,
-			);
-			name = JWCTableViewController;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		99E46DD4AB2256791F111C718CB0EEF8 /* SwiftSupport */ = {
@@ -341,6 +328,20 @@
 			path = "Target Support Files/Pods-JWCTableViewController_Tests";
 			sourceTree = "<group>";
 		};
+		ECA849ED92026A4DD5EF00D6C639C868 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E9F149A8E342698EC67F6491F3424677 /* Info.plist */,
+				CC5414A638047C8285D1FA1FA0E03880 /* JWCTableViewController.modulemap */,
+				D09DC54EB1739ECEA6E598BA90B3D895 /* JWCTableViewController.xcconfig */,
+				4DEA62EC2624EC395EF063E92491D1F5 /* JWCTableViewController-dummy.m */,
+				78616CA7E4277352B89C6A6C36173F8A /* JWCTableViewController-prefix.pch */,
+				162CDFB1506C0E02CF9CED29152B3DB4 /* JWCTableViewController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/JWCTableViewController";
+			sourceTree = "<group>";
+		};
 		F35791481CAFDD8E7715AE1B44687328 /* Core */ = {
 			isa = PBXGroup;
 			children = (
@@ -362,20 +363,35 @@
 			name = Core;
 			sourceTree = "<group>";
 		};
+		F8319F88639504893F6B6747EEC555EE /* JWCTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				326F22AECE0E022E729790090D326CA3 /* JWCNoReuseViewController.h */,
+				1B13F95DF5112EB7F6BA0056AF6A3872 /* JWCNoReuseViewController.m */,
+				785B9DAFDFB52B33D4ECAB2B7C881D59 /* JWCTableViewCell.h */,
+				2635CB71792F6673D93B9E6DFB507E0A /* JWCTableViewCell.m */,
+				9DD36FE3FBFC9916E5775A491876C8B0 /* JWCTableViewCellData.h */,
+				0E78B4638259FAA537F32DCD43307A7E /* JWCTableViewCellData.m */,
+				84316406E975381B653F38E72238ED76 /* JWCTableViewController.h */,
+				66366371AA636CFCE2015A33DBD3E07D /* JWCTableViewController.m */,
+				D7E26CC0AD64B576C0B8F1FA2EE05C71 /* JWCTableViewControllerDelegate.h */,
+				BE027D0B287ADF6F672EA4259E3159A6 /* JWCTableViewSectionCell.h */,
+				1548A267FAC98E6523579095CF58A7FE /* JWCTableViewSectionCell.m */,
+				48AE327770E5F2EE860973E81D59E00B /* JWCTableViewSectionData.h */,
+				C1907911B1A1106D7922F00F257A1AAB /* JWCTableViewSectionData.m */,
+				31822B82CD9EB7BF789E86C8533B1804 /* Pod */,
+				ECA849ED92026A4DD5EF00D6C639C868 /* Support Files */,
+			);
+			name = JWCTableViewController;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		FBD2D672921284E66F309CA3462F84D6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				2287B5EBEAA3C332F8DB9A1E61F5B097 /* FBSnapshotTestCase */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		FD70A8AC684B76321E5D0935EF2F6EF0 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				913B005137FBC3929DEF7916B4346E3F /* JWCTableViewController */,
-			);
-			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -386,6 +402,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				3623912107D4C0007B8817794C58071E /* Pods-JWCTableViewController_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98560D1B74AFF8A8CCA32271B03AA90E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				046614D1F936EBAEFE5FD4B9AE6D1969 /* JWCNoReuseViewController.h in Headers */,
+				3B1B78ECED02752FF51ED48A81123AB7 /* JWCTableViewCell.h in Headers */,
+				7F96A55B3702B0AE532A0EFC357A0EEA /* JWCTableViewCellData.h in Headers */,
+				0F79481F56BEC979F2CE256C662BAF30 /* JWCTableViewController-umbrella.h in Headers */,
+				960CEDD2251796B7901FE78402F734DF /* JWCTableViewController.h in Headers */,
+				C86C1C6492453DE58D87C133F84A93E0 /* JWCTableViewControllerDelegate.h in Headers */,
+				20BF9294B01F6BDE3346081B2D78B529 /* JWCTableViewSectionCell.h in Headers */,
+				780CB8280CFCEFAC8D26017B02CE3AE0 /* JWCTableViewSectionData.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,21 +443,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D13191F66FA38AD7346B07866C2014CB /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ACA2C39C03267BEC59FAD0387E3B3D57 /* JWCTableViewCell.h in Headers */,
-				37937D91612867FEB2D5C63BBD3D965F /* JWCTableViewCellData.h in Headers */,
-				092C653E0B6E76170139E191CF3CAD48 /* JWCTableViewController-umbrella.h in Headers */,
-				FA5B5D79048DF730F9A77CDA7608CAA5 /* JWCTableViewController.h in Headers */,
-				32D87CBA2C0F0379B63665559503F73B /* JWCTableViewSectionData.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		132500ADA26ECC02DD843281C9545F53 /* JWCTableViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9D68AF9D8E06EE4FD4D60E39A4E4F7F /* Build configuration list for PBXNativeTarget "JWCTableViewController" */;
+			buildPhases = (
+				C68D44B28A0BB0DE2B1F0306C4A27034 /* Sources */,
+				AEFB00532798D8839E098555E778E8EB /* Frameworks */,
+				98560D1B74AFF8A8CCA32271B03AA90E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JWCTableViewController;
+			productName = JWCTableViewController;
+			productReference = E4E5BF1244E3087FEE5CF38478278848 /* JWCTableViewController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		34CD2E3428AB802BACA62286FF5074B1 /* FBSnapshotTestCase */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F28097D43AF5CD8DA838ABD52A053790 /* Build configuration list for PBXNativeTarget "FBSnapshotTestCase" */;
@@ -461,23 +497,6 @@
 			name = "Pods-JWCTableViewController_Tests";
 			productName = "Pods-JWCTableViewController_Tests";
 			productReference = 37D61BD18784E44A7209276580481B86 /* Pods_JWCTableViewController_Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		C5CDC5878C4F60A130B9F99A34943413 /* JWCTableViewController */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 83EF71B1BA950666034BE98C582258C9 /* Build configuration list for PBXNativeTarget "JWCTableViewController" */;
-			buildPhases = (
-				20CFFE6F871819D0A9D650FBFFA819CF /* Sources */,
-				4C74B824A92F6632B523E8E8EDAC43C6 /* Frameworks */,
-				D13191F66FA38AD7346B07866C2014CB /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = JWCTableViewController;
-			productName = JWCTableViewController;
-			productReference = E4E5BF1244E3087FEE5CF38478278848 /* JWCTableViewController.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		CB477DB4B5B86B6D852C0382A7A0E254 /* Pods-JWCTableViewController_Example */ = {
@@ -520,7 +539,7 @@
 			projectRoot = "";
 			targets = (
 				34CD2E3428AB802BACA62286FF5074B1 /* FBSnapshotTestCase */,
-				C5CDC5878C4F60A130B9F99A34943413 /* JWCTableViewController */,
+				132500ADA26ECC02DD843281C9545F53 /* JWCTableViewController */,
 				CB477DB4B5B86B6D852C0382A7A0E254 /* Pods-JWCTableViewController_Example */,
 				941D5D793B617015F2FE51B51C82BFF1 /* Pods-JWCTableViewController_Tests */,
 			);
@@ -536,15 +555,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		20CFFE6F871819D0A9D650FBFFA819CF /* Sources */ = {
+		C68D44B28A0BB0DE2B1F0306C4A27034 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				854F762C6B736E50A70E7346DA3D93D4 /* JWCTableViewCell.m in Sources */,
-				EE5B14DB599553DA8C6591959C685F50 /* JWCTableViewCellData.m in Sources */,
-				0E9613CBF49AD91E7903507D33271000 /* JWCTableViewController-dummy.m in Sources */,
-				A775F57AC5AA0420017046E9CD5120F1 /* JWCTableViewController.m in Sources */,
-				593261B3B2AD84104472B265A4502296 /* JWCTableViewSectionData.m in Sources */,
+				9456F51C22C9FECF5A748294821B2548 /* JWCNoReuseViewController.m in Sources */,
+				F7BF2F43E7900C082067890D48974FD8 /* JWCTableViewCell.m in Sources */,
+				A7DFEB0E0C9C9FF2860A1AAD7A6AB05D /* JWCTableViewCellData.m in Sources */,
+				7533C2652B2847E08F68B66EB66ACFAA /* JWCTableViewController-dummy.m in Sources */,
+				4922EF3A39DAFD01137FB14234BA56DA /* JWCTableViewController.m in Sources */,
+				8B2E822DF4023A8813346A50110FC3EB /* JWCTableViewSectionCell.m in Sources */,
+				15E4623437E727170F30364454E1DF15 /* JWCTableViewSectionData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,7 +605,7 @@
 		82DE8875A065A45083EBBC5120A939D5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = JWCTableViewController;
-			target = C5CDC5878C4F60A130B9F99A34943413 /* JWCTableViewController */;
+			target = 132500ADA26ECC02DD843281C9545F53 /* JWCTableViewController */;
 			targetProxy = C09C305279F77137751BE03024219C40 /* PBXContainerItemProxy */;
 		};
 		BA724B154DB07FCCB39A684FC6EF9314 /* PBXTargetDependency */ = {
@@ -596,6 +617,36 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		013BFA73F306090CD9DB7AA27B2A0341 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D09DC54EB1739ECEA6E598BA90B3D895 /* JWCTableViewController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JWCTableViewController/JWCTableViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JWCTableViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JWCTableViewController/JWCTableViewController.modulemap";
+				PRODUCT_MODULE_NAME = JWCTableViewController;
+				PRODUCT_NAME = JWCTableViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		0A454962896F086EF7A56D3FFBD7A598 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D7C2D55FBE0D4CB8D9ECEDE26D660A9D /* Pods-JWCTableViewController_Tests.debug.xcconfig */;
@@ -625,36 +676,6 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		29DE1267C2452502FCDD7BA9F822D39A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2338BE2C456248062723C71C220CFCB9 /* JWCTableViewController.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/JWCTableViewController/JWCTableViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/JWCTableViewController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/JWCTableViewController/JWCTableViewController.modulemap";
-				PRODUCT_MODULE_NAME = JWCTableViewController;
-				PRODUCT_NAME = JWCTableViewController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -695,9 +716,9 @@
 			};
 			name = Release;
 		};
-		3DC5E70AC9F2B1BB7A88ACDF6EFC5738 /* Release */ = {
+		805631C0646C767288097E91D8359A30 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2338BE2C456248062723C71C220CFCB9 /* JWCTableViewController.xcconfig */;
+			baseConfigurationReference = D09DC54EB1739ECEA6E598BA90B3D895 /* JWCTableViewController.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1008,11 +1029,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83EF71B1BA950666034BE98C582258C9 /* Build configuration list for PBXNativeTarget "JWCTableViewController" */ = {
+		C9D68AF9D8E06EE4FD4D60E39A4E4F7F /* Build configuration list for PBXNativeTarget "JWCTableViewController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				29DE1267C2452502FCDD7BA9F822D39A /* Debug */,
-				3DC5E70AC9F2B1BB7A88ACDF6EFC5738 /* Release */,
+				013BFA73F306090CD9DB7AA27B2A0341 /* Debug */,
+				805631C0646C767288097E91D8359A30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

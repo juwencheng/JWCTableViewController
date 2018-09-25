@@ -16,10 +16,8 @@
 {
     _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [_window makeKeyAndVisible];
-    JWCTableViewConfigure *configure = [[JWCTableViewConfigure alloc] init];
-    configure.groupStyle = YES;
-    JWCSettingViewController *vc = [JWCSettingViewController tableViewControllerWithConfigure:configure];
-    _window.rootViewController = vc;
+    JWCSettingViewController *vc = [JWCSettingViewController tableViewControllerWithStyle:UITableViewStyleGrouped];
+    _window.rootViewController = [[UINavigationController alloc] initWithRootViewController:vc];
     return YES;
 }
 

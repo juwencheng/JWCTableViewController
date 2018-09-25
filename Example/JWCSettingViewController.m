@@ -11,8 +11,9 @@
 #import "JWCTableViewSectionData.h"
 #import "JWCSettingCell.h"
 #import "JWCSettingSectionData.h"
+#import "JWCNoReuseDemoVC.h"
 
-@interface JWCSettingViewController ()
+@interface JWCSettingViewController ()<JWCTableViewControllerDelegate>
 
 @end
 
@@ -28,6 +29,7 @@
     item1.style = JWCSettingCellItemStyleArraw;
     item1.operation = ^(NSIndexPath *indexPath) {
         NSLog(@"点击 开奖号码推送");
+        [self.navigationController pushViewController:[JWCNoReuseDemoVC tableViewControllerWithStyle:UITableViewStylePlain] animated:YES];
     };
 
 
@@ -41,8 +43,9 @@
 
     JWCSettingSectionData *group = [[JWCSettingSectionData alloc] init];
     group.children = @[item1, item2, item3];
+    group.itemHeight = 50;
 
-    group.header = @"测试title";
+//    group.header = @"测试title";
     [self reloadData:@[group]];
 
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t) (2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
@@ -58,9 +61,11 @@
 
 }
 
-- (void)configureTableView {
-    [super configureTableView];
-    self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+- (void)customizeTableViewStyle:(UITableView *)tableView {
+    tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+}
+
+- (void)registerReuseCells {
     [self registReuserCellClass:[JWCSettingCell class] withCellDataClass:[JWCSettingCellItem class]];
 }
 

@@ -10,9 +10,12 @@
 #endif
 #endif
 
+#import "JWCNoReuseViewController.h"
 #import "JWCTableViewCell.h"
 #import "JWCTableViewCellData.h"
 #import "JWCTableViewController.h"
+#import "JWCTableViewControllerDelegate.h"
+#import "JWCTableViewSectionCell.h"
 #import "JWCTableViewSectionData.h"
 
 FOUNDATION_EXPORT double JWCTableViewControllerVersionNumber;

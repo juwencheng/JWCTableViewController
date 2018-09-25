@@ -15,6 +15,16 @@
 
 @implementation JWCTableViewCell
 
++ (instancetype)cellWithData:(JWCTableViewCellData *)data style:(UITableViewCellStyle)style {
+    JWCTableViewCell *cell = [[self alloc] initWithStyle:style reuseIdentifier:nil];
+    [cell configureData:data];
+    return cell;
+}
+
++ (instancetype)cellWithData:(JWCTableViewCellData *)data {
+    return [self cellWithData:data style:UITableViewCellStyleDefault];
+}
+
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {

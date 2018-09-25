@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JWCTableViewController'
-  s.version          = '0.2.1'
+  s.version          = '0.3.0'
   s.summary          = '快速生成列表的工具，支持header，自动高度和手动高度.'
 
 # This description is used to generate tags and improve search results.

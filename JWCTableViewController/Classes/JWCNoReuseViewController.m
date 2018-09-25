@@ -1,23 +1,23 @@
 //
-//  JWCTableViewController.m
-//  TableView封装
+//  JWCNoReuseViewController.m
+//  JWCTableViewController_Example
 //
-//  Created by Ju on 14-8-20.
-//  Copyright (c) 2014年 dono. All rights reserved.
+//  Created by 鞠汶成 on 2018/9/25.
+//  Copyright © 2018年 Juwencheng. All rights reserved.
 //
 
-#import "JWCTableViewController.h"
+#import "JWCNoReuseViewController.h"
+#import "JWCTableViewSectionCell.h"
+#import "JWCTableViewCell.h"
 #import "JWCTableViewCellData.h"
-#import "JWCTableViewControllerDelegate.h"
 
-@interface JWCTableViewController ()<JWCTableViewControllerDelegate>
+@interface JWCNoReuseViewController ()<JWCTableViewControllerDelegate>
 @property(nonatomic, strong, readwrite) UITableView *tableView;
-@property(nonatomic, strong) NSMutableArray<JWCTableViewSectionData *> *data;
+@property(nonatomic, strong) NSMutableArray<JWCTableViewSectionCell *> *data;
 @property(nonatomic, assign) UITableViewStyle tableViewStyle;
-@property(nonatomic, strong) NSMutableDictionary *dataClass2CellClass;
 @end
 
-@implementation JWCTableViewController
+@implementation JWCNoReuseViewController
 
 + (instancetype)tableViewControllerWithStyle:(UITableViewStyle)style {
     return [[self alloc] initWithStyle:style];
@@ -43,12 +43,6 @@
     [self addTableViewConstraints];
     [self configureTableView];
     [self assignTableViewDelegateAndDataSource];
-    
-    if (!self.delegate || ![self.delegate respondsToSelector:@selector(registerReuseCells)]) {
-        @throw [NSException exceptionWithName:@"JWCTableViewController初始化错误" reason:@"请实现registerReuseCells方法" userInfo:nil];
-    }
-
-    [self.delegate registerReuseCells];
 }
 
 - (void)addTableViewConstraints {
@@ -79,15 +73,6 @@
     }
 }
 
-- (void)registReuserCellClass:(Class)cellClass withCellDataClass:(Class)cellDataClass {
-    self.dataClass2CellClass[NSStringFromClass(cellDataClass)] = NSStringFromClass(cellClass);
-    [self.tableView registerClass:cellClass forCellReuseIdentifier:NSStringFromClass(cellClass)];
-}
-
-- (JWCTableViewCell *)dequeueCellWithClassStr:(NSString *)cellClassStr {
-    return [self.tableView dequeueReusableCellWithIdentifier:cellClassStr];
-}
-
 #pragma mark tableview delegate & datasource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -95,31 +80,27 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    JWCTableViewSectionData *sectionData = self.data[(NSUInteger) section];
+    JWCTableViewSectionCell *sectionData = self.data[(NSUInteger) section];
     return sectionData.children.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    JWCTableViewSectionData *sectionData = self.data[(NSUInteger) indexPath.section];
-    JWCTableViewCellData *item = sectionData.children[(NSUInteger) indexPath.row];
-    NSString *cellClassStr = self.dataClass2CellClass[NSStringFromClass([item class])];
-    JWCTableViewCell *cell = [self dequeueCellWithClassStr:cellClassStr];
-    [cell configureData:item];
-
+    JWCTableViewSectionCell *sectionData = self.data[(NSUInteger) indexPath.section];
+    JWCTableViewCell *cell = sectionData.children[(NSUInteger) indexPath.row];
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
-    JWCTableViewSectionData *sectionData = self.data[(NSUInteger) indexPath.section];
-    JWCTableViewCellData *item = sectionData.children[(NSUInteger) indexPath.row];
-    if (item.operation) {
-        item.operation(indexPath);
+    JWCTableViewSectionCell *sectionData = self.data[(NSUInteger) indexPath.section];
+    JWCTableViewCell *cell = sectionData.children[(NSUInteger) indexPath.row];
+    if (cell.data.operation) {
+        cell.data.operation(indexPath);
     }
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    JWCTableViewSectionData *sectionData = self.data[(NSUInteger) indexPath.section];
+    JWCTableViewSectionCell *sectionData = self.data[(NSUInteger) indexPath.section];
     return [sectionData cellHeightWithIndex:indexPath.row];
 }
 
@@ -135,7 +116,7 @@
     if (self.data[(NSUInteger) section].sectionHeaderHeight <= 0.1) {
         return nil;
     }
-
+    
     return self.data[(NSUInteger) section].headerView;
 }
 
@@ -143,31 +124,15 @@
     return self.data[(NSUInteger) section].footerView;
 }
 
-- (void)reloadData:(NSArray<JWCTableViewSectionData *> *)data {
+- (void)reloadData:(NSArray<JWCTableViewSectionCell *> *)data {
     [self.data removeAllObjects];
     [self.data addObjectsFromArray:data];
     [self.tableView reloadData];
 }
-/*
-- (void)validSectionData:(NSArray<JWCTableViewSectionData *> *)sectionData {
-    for (JWCTableViewSectionData *section in sectionData) {
-        [self validData:section.children];
-    }
-}
 
-- (void)validData:(NSArray<JWCTableViewCellData *> *)data {
-    for (JWCTableViewCellData *element in data) {
-        NSString *cellClassStr = self.dataClass2CellClass[NSStringFromClass([element class])];
-        if (cellClassStr.length == 0) {
-            @throw [NSException exceptionWithName:@"初始化错误" reason:@"请调用 registReuserCellClass:withCellDataClass 注册cell" userInfo:nil];
-        }
-        [element bindToCellClass: NSClassFromString(cellClassStr)];
-    }
-}*/
-
-- (void)appendData:(NSArray<JWCTableViewCellData *> *)data toSection:(NSInteger)section {
+- (void)appendData:(NSArray<JWCTableViewCell *> *)data toSection:(NSInteger)section {
     if (self.data.count > section) {
-        JWCTableViewSectionData *sectionData = self.data[(NSUInteger) section];
+        JWCTableViewSectionCell *sectionData = self.data[(NSUInteger) section];
         NSMutableArray *sectionChildren = [sectionData.children mutableCopy];
         [sectionChildren addObjectsFromArray:data];
         sectionData.children = [sectionChildren copy];
@@ -186,9 +151,9 @@
     }
 }
 
-- (void)removeData:(NSArray<JWCTableViewCellData *> *)data fromSection:(NSInteger)section {
+- (void)removeData:(NSArray<JWCTableViewCell *> *)data fromSection:(NSInteger)section {
     if (self.data.count > section) {
-        JWCTableViewSectionData *sectionData = self.data[(NSUInteger) section];
+        JWCTableViewSectionCell *sectionData = self.data[(NSUInteger) section];
         NSMutableArray *sectionChildren = [sectionData.children mutableCopy];
         [sectionChildren removeObjectsInArray:data];
         sectionData.children = [sectionChildren copy];
@@ -198,23 +163,17 @@
     }
 }
 
-- (void)loadMoreData:(NSArray<JWCTableViewSectionData *> *)moreData {
+- (void)loadMoreData:(NSArray<JWCTableViewSectionCell *> *)moreData {
     [self.data addObjectsFromArray:moreData];
     [self.tableView reloadData];
 }
 
-- (NSMutableArray<JWCTableViewSectionData *> *)data {
+- (NSMutableArray<JWCTableViewSectionCell *> *)data {
     if (!_data) {
         _data = [NSMutableArray array];
     }
     return _data;
 }
 
-- (NSMutableDictionary *)dataClass2CellClass {
-    if (!_dataClass2CellClass) {
-        _dataClass2CellClass = [NSMutableDictionary dictionary];
-    }
-    return _dataClass2CellClass;
-}
 
 @end

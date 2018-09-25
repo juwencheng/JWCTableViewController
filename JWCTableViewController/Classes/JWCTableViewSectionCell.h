@@ -1,21 +1,16 @@
 //
-//  JWCSectionGroup.h
-//  TableView封装
+//  JWCTableViewSectionCell.h
+//  JWCTableViewController_Example
 //
-//  Created by Ju on 14-8-20.
-//  Copyright (c) 2014年 dono. All rights reserved.
+//  Created by 鞠汶成 on 2018/9/25.
+//  Copyright © 2018年 Juwencheng. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@class JWCTableViewCellData;
+@class JWCTableViewCell;
 
-@interface JWCTableViewSectionData : NSObject
-
-+ (instancetype)sectionDataWithHeader:(NSString *)header footer:(NSString *)footer children:(NSArray<JWCTableViewCellData *> *)children;
-
-+ (instancetype)sectionDataWithChildren:(NSArray<JWCTableViewCellData *> *)children;
-
+@interface JWCTableViewSectionCell : NSObject
 /**
  * 获取 cellHeight
  * @param index cellHeight
@@ -62,6 +57,6 @@
 /**
  * section 下面的数据
  */
-@property(nonatomic, strong) NSArray<JWCTableViewCellData *> *children;
+@property(nonatomic, strong) NSArray<JWCTableViewCell *> *children;
 
 @end

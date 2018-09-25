@@ -9,23 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "JWCTableViewSectionData.h"
 #import "JWCTableViewCell.h"
+@protocol JWCTableViewControllerDelegate;
 
-
-@interface JWCTableViewConfigure : NSObject
-/**
- * 是否是group样式
- */
-@property(nonatomic, assign) BOOL groupStyle;
-/**
- * 是否自动计算高度
- */
-@property(nonatomic, assign) BOOL isAutolayoutHeight;
-
-
-@end
-
-
-@interface JWCTableViewController : UIViewController
+@interface JWCTableViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 /**
  * 刷新列表数据
  * @param data NSArray<JWCTableViewSectionData *>
@@ -58,25 +44,16 @@
  */
 - (void)removeData:(NSArray <JWCTableViewCellData *> *)data fromSection:(NSInteger)section;
 
-/**
- * 应用配置
- * @param configure JWCTableViewConfigure
- */
-- (void)applyConfigure:(JWCTableViewConfigure *)configure;
-
-/**
- * 配置tableView，子类继承
- */
-- (void)configureTableView;
-
 - (void)registReuserCellClass:(Class)cellClass withCellDataClass:(Class)cellDataClass;
 
 /**
  * 快捷方法生成 JWCTableViewController
- * @param configure JWCTableViewConfigure
+ * @param style UITableViewStyle
  * @return JWCTableViewController
  */
-+ (instancetype)tableViewControllerWithConfigure:(JWCTableViewConfigure *)configure;
++ (instancetype)tableViewControllerWithStyle:(UITableViewStyle)style;
+
+@property (nonatomic, weak) id<JWCTableViewControllerDelegate> delegate;
 
 @property(nonatomic, strong, readonly) UITableView *tableView;
 

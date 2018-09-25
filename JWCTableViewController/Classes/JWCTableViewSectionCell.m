@@ -1,37 +1,23 @@
 //
-//  JWCSectionGroup.m
-//  TableView封装
+//  JWCTableViewSectionCell.m
+//  JWCTableViewController_Example
 //
-//  Created by Ju on 14-8-20.
-//  Copyright (c) 2014年 dono. All rights reserved.
+//  Created by 鞠汶成 on 2018/9/25.
+//  Copyright © 2018年 Juwencheng. All rights reserved.
 //
 
-#import "JWCTableViewSectionData.h"
-#import "JWCTableViewCellData.h"
+#import "JWCTableViewSectionCell.h"
+#import "JWCTableViewCell.h"
 
-@interface JWCTableViewSectionData ()
+@interface JWCTableViewSectionCell ()
 
+@property (nonatomic, strong) NSMutableArray *cellHeights;
 @end
 
-@implementation JWCTableViewSectionData
-
-+ (instancetype)sectionDataWithHeader:(NSString *)header footer:(NSString *)footer children:(NSArray<JWCTableViewCellData *> *)children {
-    JWCTableViewSectionData *data = [[JWCTableViewSectionData alloc] init];
-    data.header = header;
-    data.footer = footer;
-    data.children = children;
-    return data;
-}
-
-+ (instancetype)sectionDataWithChildren:(NSArray<JWCTableViewCellData *> *)children {
-    JWCTableViewSectionData *data = [[JWCTableViewSectionData alloc] init];
-    data.children = children;
-    return data;
-}
-
+@implementation JWCTableViewSectionCell
 - (CGFloat)cellHeightWithIndex:(NSInteger)index {
     if (self.itemHeight > 0) return self.itemHeight;
-    else if (index < self.children.count) return self.children[(NSUInteger) index].cellHeight;
+    if (index < self.cellHeights.count) return [self.cellHeights[(NSUInteger) index] floatValue];
     else return UITableViewAutomaticDimension;
 }
 
@@ -41,6 +27,14 @@
 
 - (CGFloat)sectionHeaderHeight {
     return 0.1;
+}
+
+- (void)setChildren:(NSArray<JWCTableViewCell *> *)children {
+    _children = children;
+    [_cellHeights removeAllObjects];
+    for (JWCTableViewCell *cell in children) {
+        [_cellHeights addObject:@(cell.frame.size.height)];
+    }
 }
 
 - (UIView *)headerView {
@@ -63,6 +57,13 @@
         _footerView = label;
     }
     return _footerView;
+}
+
+- (NSMutableArray *)cellHeights {
+    if (!_cellHeights) {
+        _cellHeights = [NSMutableArray array];
+    }
+    return _cellHeights;
 }
 
 @end
