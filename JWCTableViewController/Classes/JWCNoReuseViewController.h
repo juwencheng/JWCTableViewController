@@ -13,7 +13,7 @@
 @class JWCTableViewCell;
 @class JWCNoReuseTableView;
 
-@interface JWCNoReuseViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
+@interface JWCNoReuseViewController : UIViewController
 /**
  * 刷新列表数据
  * @param data NSArray<JWCTableViewSectionCell *>

@@ -13,7 +13,7 @@
 
 @protocol JWCTableViewControllerDelegate;
 
-@interface JWCTableViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
+@interface JWCTableViewController : UIViewController
 /**
  * 刷新列表数据
  * @param data NSArray<JWCTableViewSectionData *>
