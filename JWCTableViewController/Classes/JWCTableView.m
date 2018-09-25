@@ -42,6 +42,7 @@
 - (void)commonInit {
     self.delegate = self;
     self.dataSource = self;
+    self.tableFooterView = [UIView new];
 }
 
 - (JWCTableViewCell *)dequeueCellWithClassStr:(NSString *)cellClassStr {

@@ -35,14 +35,6 @@
     else return UITableViewAutomaticDimension;
 }
 
-- (CGFloat)sectionFooterHeight {
-    return 0.1;
-}
-
-- (CGFloat)sectionHeaderHeight {
-    return 0.1;
-}
-
 - (UIView *)headerView {
     if (!_headerView) {
         UILabel *label = [UILabel new];

@@ -10,7 +10,9 @@
 #endif
 #endif
 
+#import "JWCNoReuseTableView.h"
 #import "JWCNoReuseViewController.h"
+#import "JWCTableView.h"
 #import "JWCTableViewCell.h"
 #import "JWCTableViewCellData.h"
 #import "JWCTableViewController.h"

@@ -15,10 +15,6 @@
 
 @implementation JWCTableViewCellData
 
-- (CGFloat)cellHeight {
-    return UITableViewAutomaticDimension;
-}
-
 - (void)preLayout {
     // 子类实现，计算高度
 }

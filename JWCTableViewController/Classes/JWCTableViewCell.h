@@ -33,6 +33,8 @@
  */
 - (void)configureData:(JWCTableViewCellData *)data;
 
+- (void)commonInit;
+
 @property(nonatomic, strong, readonly) JWCTableViewCellData *data;
 
 @end

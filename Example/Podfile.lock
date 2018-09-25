@@ -4,7 +4,7 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - JWCTableViewController (0.2.1)
+  - JWCTableViewController (0.3.0)
 
 DEPENDENCIES:
   - FBSnapshotTestCase
@@ -20,7 +20,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  JWCTableViewController: a5874c3f7bd9c222999523c4293d8d6442163347
+  JWCTableViewController: c87e42928b84762c1870ef4074e59a4efac69758
 
 PODFILE CHECKSUM: eb91d8bf42db3ef85989c7a63cfc99faa2b672ff
 

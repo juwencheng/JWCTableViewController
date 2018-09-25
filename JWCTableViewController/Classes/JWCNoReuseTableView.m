@@ -45,6 +45,7 @@
 - (void)commonInit {
     self.delegate = self;
     self.dataSource = self;
+    self.tableFooterView = [UIView new];
 }
 
 #pragma mark tableview delegate & datasource

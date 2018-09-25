@@ -28,9 +28,13 @@
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-
+        [self commonInit];
     }
     return self;
+}
+
+- (void)commonInit {
+
 }
 
 - (void)configureData:(JWCTableViewCellData *)data {
