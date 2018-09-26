@@ -66,7 +66,7 @@
 }
 
 - (void)registerReuseCells {
-    [self.tableView registReuserCellClass:[JWCSettingCell class] withCellDataClass:[JWCSettingCellItem class]];
+    [self.tableView registReuseCellClass:[JWCSettingCell class] withCellDataClass:[JWCSettingCellItem class]];
 }
 
 @end

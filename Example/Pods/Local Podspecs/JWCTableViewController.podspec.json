@@ -1,6 +1,6 @@
 {
   "name": "JWCTableViewController",
-  "version": "0.3.0",
+  "version": "0.3.2",
   "summary": "快速生成列表的工具，支持header，自动高度和手动高度.",
   "description": "快速生成列表的类封装，支持header，自动高度和手动高度.",
   "homepage": "https://github.com/Juwencheng/JWCTableViewController",
@@ -13,10 +13,11 @@
   },
   "source": {
     "git": "https://github.com/Juwencheng/JWCTableViewController.git",
-    "tag": "0.3.0"
+    "tag": "0.3.2"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "JWCTableViewController/Classes/**/*"
+  "source_files": "JWCTableViewController/Classes/**/*",
+  "frameworks": "UIKit"
 }
