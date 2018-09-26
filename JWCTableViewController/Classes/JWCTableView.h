@@ -43,6 +43,8 @@
  */
 - (void)removeData:(NSArray <JWCTableViewCellData *> *)data fromSection:(NSInteger)section;
 
-- (void)registReuserCellClass:(Class)cellClass withCellDataClass:(Class)cellDataClass;
+- (void)registReuseCellClass:(Class)cellClass withCellDataClass:(Class)cellDataClass;
+
+- (void)registReuseNibCellClass:(Class)cellClass withCellDataClass:(Class)cellDataClass;
 
 @end

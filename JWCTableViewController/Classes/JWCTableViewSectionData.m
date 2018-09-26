@@ -30,7 +30,8 @@
 }
 
 - (CGFloat)cellHeightWithIndex:(NSInteger)index {
-    if (self.itemHeight > 0) return self.itemHeight;
+    if (self.itemHeight == UITableViewAutomaticDimension) return UITableViewAutomaticDimension;
+    else if (self.itemHeight > 0) return self.itemHeight;
     else if (index < self.children.count) return self.children[(NSUInteger) index].cellHeight;
     else return UITableViewAutomaticDimension;
 }

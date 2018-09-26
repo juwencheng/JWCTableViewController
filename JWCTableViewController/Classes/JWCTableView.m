@@ -49,9 +49,14 @@
     return [self dequeueReusableCellWithIdentifier:cellClassStr];
 }
 
-- (void)registReuserCellClass:(Class)cellClass withCellDataClass:(Class)cellDataClass {
+- (void)registReuseCellClass:(Class)cellClass withCellDataClass:(Class)cellDataClass {
     self.dataClass2CellClass[NSStringFromClass(cellDataClass)] = NSStringFromClass(cellClass);
     [self registerClass:cellClass forCellReuseIdentifier:NSStringFromClass(cellClass)];
+}
+
+- (void)registReuseNibCellClass:(Class)cellClass withCellDataClass:(Class)cellDataClass {
+    self.dataClass2CellClass[NSStringFromClass(cellDataClass)] = NSStringFromClass(cellClass);
+    [self registerNib:[UINib nibWithNibName:NSStringFromClass(cellClass) bundle:nil] forCellReuseIdentifier:NSStringFromClass(cellClass)];
 }
 
 #pragma mark tableview delegate & datasource
@@ -70,7 +75,7 @@
     NSString *cellClassStr = self.dataClass2CellClass[NSStringFromClass([item class])];
     JWCTableViewCell *cell = [self dequeueCellWithClassStr:cellClassStr];
     [cell configureData:item];
-
+    
     return cell;
 }
 
@@ -100,7 +105,7 @@
     if (self.data[(NSUInteger) section].sectionHeaderHeight <= 0.1) {
         return nil;
     }
-
+    
     return self.data[(NSUInteger) section].headerView;
 }
 

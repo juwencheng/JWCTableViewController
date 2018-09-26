@@ -21,14 +21,6 @@
     else return UITableViewAutomaticDimension;
 }
 
-- (CGFloat)sectionFooterHeight {
-    return 0.1;
-}
-
-- (CGFloat)sectionHeaderHeight {
-    return 0.1;
-}
-
 - (void)setChildren:(NSArray<JWCTableViewCell *> *)children {
     _children = children;
     [_cellHeights removeAllObjects];
@@ -43,6 +35,7 @@
         label.font = [UIFont systemFontOfSize:15];
         NSString *text = self.header.length == 0 ? @"" : [NSString stringWithFormat:@"  %@", self.header];
         label.text = text;
+        label.backgroundColor = [UIColor whiteColor];
         _headerView = label;
     }
     return _headerView;
@@ -54,6 +47,7 @@
         label.font = [UIFont systemFontOfSize:15];
         NSString *text = self.footer.length == 0 ? @"" : [NSString stringWithFormat:@"  %@", self.footer];
         label.text = text;
+        label.backgroundColor = [UIColor whiteColor];
         _footerView = label;
     }
     return _footerView;
