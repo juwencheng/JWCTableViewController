@@ -142,6 +142,16 @@
     [self reloadData];
 }
 
+- (NSArray<JWCTableViewCell *> *)cellsWithCellClass:(JWCTableViewCell *)cell data:(NSArray<JWCTableViewCellData *> *)data {
+    NSMutableArray *cells = [NSMutableArray array];
+    if ([cell isKindOfClass:[JWCTableViewCell class]]) {
+        for (JWCTableViewCellData *cellData in data) {
+            [cells addObject:[[cell class] cellWithData:cellData]];
+        }
+    }
+    return cells ;
+}
+
 - (NSMutableArray<JWCTableViewSectionCell *> *)data {
     if (!_data) {
         _data = [NSMutableArray array];

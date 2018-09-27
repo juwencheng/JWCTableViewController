@@ -9,6 +9,7 @@
 
 @class JWCTableViewSectionCell;
 @class JWCTableViewCell;
+@class JWCTableViewCellData;
 
 @interface JWCNoReuseTableView : UITableView
 
@@ -44,5 +45,6 @@
  */
 - (void)removeData:(NSArray <JWCTableViewCell *> *)data fromSection:(NSInteger)section;
 
+- (NSArray<JWCTableViewCell *> *)cellsWithCellClass:(JWCTableViewCell *)cell data:(NSArray<JWCTableViewCellData *> *)data;
 
 @end
