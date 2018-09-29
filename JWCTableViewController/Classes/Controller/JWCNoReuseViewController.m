@@ -9,7 +9,8 @@
 #import "JWCNoReuseViewController.h"
 #import "JWCTableViewSectionCell.h"
 #import "JWCTableViewNoReuseDataSourceProxy.h"
-
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wprotocol"
 @interface JWCNoReuseViewController ()<UITableViewDataSource, UITableViewDelegate>
 
 @property(nonatomic, strong, readwrite) UITableView *tableView;
@@ -66,3 +67,4 @@
 
 
 @end
+#pragma GCC diagnostic pop

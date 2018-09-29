@@ -10,7 +10,8 @@
 #import "JWCTableViewCellData.h"
 #import "JWCTableViewControllerDelegate.h"
 #import "UITableView+JWC.h"
-
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wprotocol"
 @interface JWCTableViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic, strong, readwrite) UITableView *tableView;
 @property(nonatomic, strong) NSMutableArray<JWCTableViewSectionData *> *data;
@@ -63,3 +64,4 @@
 }
 
 @end
+#pragma GCC diagnostic pop

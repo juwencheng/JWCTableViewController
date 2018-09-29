@@ -11,7 +11,8 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     id <JWCTableViewSectionDataProtocol> sectionData = self.jwc_data[(NSUInteger) indexPath.section];
-    UITableViewCell *cell = sectionData.children[(NSUInteger) indexPath.row];
+    id<JWCTableViewCellDataProtocol> item = sectionData.children[(NSUInteger) indexPath.row];
+    UITableViewCell *cell = (UITableViewCell *)item;
     return cell;
 }
 
