@@ -10,15 +10,18 @@
 #endif
 #endif
 
-#import "JWCNoReuseTableView.h"
-#import "JWCNoReuseViewController.h"
-#import "JWCTableView.h"
 #import "JWCTableViewCell.h"
-#import "JWCTableViewCellData.h"
-#import "JWCTableViewController.h"
-#import "JWCTableViewControllerDelegate.h"
 #import "JWCTableViewSectionCell.h"
+#import "JWCNoReuseViewController.h"
+#import "JWCTableViewController.h"
+#import "JWCTableViewCellData.h"
 #import "JWCTableViewSectionData.h"
+#import "UITableView+JWC.h"
+#import "UITableViewCell+JWC.h"
+#import "JWCTableViewControllerDelegate.h"
+#import "JWCTableViewDataSourceProxy.h"
+#import "JWCTableViewDelegateProxy.h"
+#import "JWCTableViewNoReuseDataSourceProxy.h"
 
 FOUNDATION_EXPORT double JWCTableViewControllerVersionNumber;
 FOUNDATION_EXPORT const unsigned char JWCTableViewControllerVersionString[];

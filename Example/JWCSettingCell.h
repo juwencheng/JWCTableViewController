@@ -7,7 +7,7 @@
 //
 
 #import <JWCTableViewController/JWCTableViewCell.h>
-
-@interface JWCSettingCell : JWCTableViewCell
+#import <JWCTableViewController/UITableViewCell+JWC.h>
+@interface JWCSettingCell : UITableViewCell<JWCTableViewCellDataProtocol>
 
 @end

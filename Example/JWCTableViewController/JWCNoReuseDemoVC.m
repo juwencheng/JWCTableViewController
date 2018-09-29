@@ -9,7 +9,7 @@
 #import "JWCNoReuseDemoVC.h"
 #import "JWCSettingCellItem.h"
 #import <JWCTableViewController/JWCTableViewCell.h>
-#import <JWCTableViewController/JWCTableViewSectionCell.h>
+#import <JWCTableViewController/JWCTableViewSectionData.h>
 #import "JWCSettingCell.h"
 @interface JWCNoReuseDemoVC ()
 
@@ -23,6 +23,7 @@
 }
 
 - (void)setupData {
+    
     JWCSettingCellItem *item1 = [[JWCSettingCellItem alloc] init];
     item1.title = @"开奖号码推送-noreuse";
     item1.style = JWCSettingCellItemStyleArraw;
@@ -39,15 +40,19 @@
     item3.title = @"购彩票定时提醒-noreuse";
     item3.style = JWCSettingCellItemStyleSwitch;
     
-    JWCTableViewSectionCell *section = [[JWCTableViewSectionCell alloc] init];
-    section.sectionHeaderHeight = 30;
+    JWCTableViewSectionData *section = [[JWCTableViewSectionData alloc] init];
+    section.rowHeight = 50;
     section.children = @[
             [JWCSettingCell cellWithData:item1],
             [JWCSettingCell cellWithData:item2],
             [JWCSettingCell cellWithData:item3]
             ];
         //    group.header = @"测试title";
-    [self reloadData:@[section]];
+    [self.tableView reloadData:@[section]];
+}
+
+- (void)dealloc {
+    NSLog(@"JWCNoReuseDemoVC 被释放了");
 }
 
 @end

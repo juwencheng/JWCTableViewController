@@ -13,7 +13,7 @@
 #import "JWCSettingSectionData.h"
 #import "JWCNoReuseDemoVC.h"
 
-@interface JWCSettingViewController ()<JWCTableViewControllerDelegate>
+@interface JWCSettingViewController ()
 
 @end
 
@@ -23,7 +23,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"推送";
+    [self registerReuseCells];
+    [self setupData];
+}
 
+- (void)setupData {
     JWCSettingCellItem *item1 = [[JWCSettingCellItem alloc] init];
     item1.title = @"开奖号码推送";
     item1.style = JWCSettingCellItemStyleArraw;
@@ -31,34 +35,33 @@
         NSLog(@"点击 开奖号码推送");
         [self.navigationController pushViewController:[JWCNoReuseDemoVC tableViewControllerWithStyle:UITableViewStylePlain] animated:YES];
     };
-
-
+    
+    
     JWCSettingCellItem *item2 = [[JWCSettingCellItem alloc] init];
     item2.title = @"中奖动画";
     item2.style = JWCSettingCellItemStyleNone;
-
+    
     JWCSettingCellItem *item3 = [[JWCSettingCellItem alloc] init];
     item3.title = @"购彩票定时提醒";
     item3.style = JWCSettingCellItemStyleSwitch;
-
-    JWCSettingSectionData *group = [[JWCSettingSectionData alloc] init];
+    
+    JWCTableViewSectionData *group = [[JWCTableViewSectionData alloc] init];
     group.children = @[item1, item2, item3];
-    group.itemHeight = 50;
-
-//    group.header = @"测试title";
-    [self reloadData:@[group]];
-
+    group.rowHeight = 50;
+    
+        //    group.header = @"测试title";
+    [self.tableView reloadData:@[group]];
+    
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t) (2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         JWCSettingCellItem *item4 = [[JWCSettingCellItem alloc] init];
         item4.title = @"购彩票定时提醒-2";
         item4.style = JWCSettingCellItemStyleSwitch;
-        [self appendData:@[item4] toSection:0];
-
+        [self.tableView appendData:@[item4] toSection:0];
+        
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t) (2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [self removeData:@[item4] fromSection:0];
+            [self.tableView removeData:@[item4] fromSection:0];
         });
     });
-
 }
 
 - (void)customizeTableViewStyle:(UITableView *)tableView {
@@ -66,7 +69,7 @@
 }
 
 - (void)registerReuseCells {
-    [self.tableView registReuseCellClass:[JWCSettingCell class] withCellDataClass:[JWCSettingCellItem class]];
+    [self.tableView registerReuseCellClass:[JWCSettingCell class] withCellDataClass:[JWCSettingCellItem class]];
 }
 
 @end

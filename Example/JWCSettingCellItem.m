@@ -11,8 +11,6 @@
 
 @implementation JWCSettingCellItem
 
-+ (Class)cellClass {
-    return [JWCSettingCell class];
-}
+
 
 @end
