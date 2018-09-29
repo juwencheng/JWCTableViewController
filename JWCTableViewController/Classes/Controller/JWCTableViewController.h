@@ -11,8 +11,6 @@
 #import "JWCTableViewCell.h"
 #import "UITableView+JWC.h"
 
-@protocol JWCTableViewControllerDelegate;
-
 @interface JWCTableViewController : UIViewController
 
 + (instancetype)tableViewControllerWithStyle:(UITableViewStyle)style;

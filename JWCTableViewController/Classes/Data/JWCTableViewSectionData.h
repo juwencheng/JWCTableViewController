@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "JWCTableViewControllerDelegate.h"
+#import "JWCTableViewProtocol.h"
 
 @class JWCTableViewCellData;
 

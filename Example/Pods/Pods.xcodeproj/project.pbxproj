@@ -36,7 +36,7 @@
 		DF18A108A2D94F59D9B41E77CE4E593E /* UITableViewCell+JWC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F7EE2E9A3246DF82231D01FC8BFFE15 /* UITableViewCell+JWC.m */; };
 		DFA87E145EC58EFD4FB5060B16A7D097 /* JWCTableViewDataSourceProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AF18B345CC70BEECE6F872A3B7A3DC /* JWCTableViewDataSourceProxy.m */; };
 		E48B5512572461C07DA9F984D2D800B5 /* JWCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF748D6A59031C5BA07C6FD2BABB00AA /* JWCTableViewCell.m */; };
-		E5820019455287328BBB2A4C3D938104 /* JWCTableViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 245A6B6C2619F11EE518479590DCB73A /* JWCTableViewControllerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5820019455287328BBB2A4C3D938104 /* JWCTableViewProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 245A6B6C2619F11EE518479590DCB73A /* JWCTableViewProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E6646A6BFDE92CBF64FFAE7AA26F62F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
 		E83D7761FA90A21F40374BCE43D54E71 /* JWCTableViewCellData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F606BDF7072EF1C54CFB34A925A2A69 /* JWCTableViewCellData.m */; };
 		F846F9E38E108AE812C70188FA5E6A39 /* Pods-JWCTableViewController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EB3072533FCF3F19B605C778609F2AC /* Pods-JWCTableViewController_Example-dummy.m */; };
@@ -61,7 +61,7 @@
 
 /* Begin PBXFileReference section */
 		0DA8F805A44B4105A51E20546AC9505F /* JWCTableViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JWCTableViewController.xcconfig; sourceTree = "<group>"; };
-		245A6B6C2619F11EE518479590DCB73A /* JWCTableViewControllerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JWCTableViewControllerDelegate.h; path = JWCTableViewController/Classes/JWCTableViewControllerDelegate.h; sourceTree = "<group>"; };
+		245A6B6C2619F11EE518479590DCB73A /* JWCTableViewProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JWCTableViewProtocol.h; path = JWCTableViewController/Classes/JWCTableViewProtocol.h; sourceTree = "<group>"; };
 		246760839683672C6A811AFD34DE57BD /* JWCTableViewDelegateProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JWCTableViewDelegateProxy.h; sourceTree = "<group>"; };
 		29582678594D406F448EE3F54F28F9A2 /* JWCTableViewSectionData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JWCTableViewSectionData.h; sourceTree = "<group>"; };
 		29A9144B3182FF607F6F66D43E4563B9 /* Pods-JWCTableViewController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JWCTableViewController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -161,7 +161,7 @@
 		425E69C62943BD935EC1CBD45FEB0811 /* JWCTableViewController */ = {
 			isa = PBXGroup;
 			children = (
-				245A6B6C2619F11EE518479590DCB73A /* JWCTableViewControllerDelegate.h */,
+				245A6B6C2619F11EE518479590DCB73A /* JWCTableViewProtocol.h */,
 				D53210E51E0CB4CFDFC5B4B5915C9036 /* Cell */,
 				7D7D0B1E855A1B77FFFC605D1AA7B423 /* Controller */,
 				B1D28DC79F2DBF19DFA665166ABB2667 /* Data */,
@@ -362,7 +362,7 @@
 				CCC8065138CFAE6B1F2AEBCF8F63EAE7 /* JWCTableViewCellData.h in Headers */,
 				01CE798FCED69DC6BA7EFD6B8D311070 /* JWCTableViewController-umbrella.h in Headers */,
 				4B1F6CC97384145DB6A0E397E85290E3 /* JWCTableViewController.h in Headers */,
-				E5820019455287328BBB2A4C3D938104 /* JWCTableViewControllerDelegate.h in Headers */,
+				E5820019455287328BBB2A4C3D938104 /* JWCTableViewProtocol.h in Headers */,
 				C375818FD0EF5EF17B2B66F25F291DF3 /* JWCTableViewDataSourceProxy.h in Headers */,
 				B1044FFC7802111B73B616366AAAFA44 /* JWCTableViewDelegateProxy.h in Headers */,
 				7AC8D821B63B78A886D81F7E907A8CDA /* JWCTableViewNoReuseDataSourceProxy.h in Headers */,

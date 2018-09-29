@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "JWCTableViewControllerDelegate.h"
+#import "JWCTableViewProtocol.h"
 
 @interface UITableViewCell (JWC)
 /**

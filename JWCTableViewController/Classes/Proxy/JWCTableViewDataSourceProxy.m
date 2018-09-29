@@ -7,7 +7,7 @@
 //
 
 #import "JWCTableViewDataSourceProxy.h"
-#import "JWCTableViewControllerDelegate.h"
+#import "JWCTableViewProtocol.h"
 #import "UITableViewCell+JWC.h"
 
 @interface JWCTableViewDataSourceProxy ()

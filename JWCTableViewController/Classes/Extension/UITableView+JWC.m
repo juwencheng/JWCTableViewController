@@ -31,7 +31,12 @@ static const void *jwc_datasourceProxyKey = &jwc_datasourceProxyKey;
 
 - (void)setJWCDelegate:(id <UITableViewDelegate>)delegate {
     if (delegate == nil) return;
-    JWCTableViewDelegateProxy *proxy = [JWCTableViewDelegateProxy proxyWithDelegate:delegate];
+    JWCTableViewDelegateProxy *proxy;
+    if ([delegate isKindOfClass:[JWCTableViewDelegateProxy class]]) {
+        proxy = delegate;
+    }else {
+        proxy = [JWCTableViewDelegateProxy proxyWithDelegate:delegate];
+    }
     proxy.tableView = self;
     proxy.jwc_data = [self jwc_innerData];
     objc_setAssociatedObject(self, &jwc_delegateProxyKey, proxy, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
@@ -40,25 +45,16 @@ static const void *jwc_datasourceProxyKey = &jwc_datasourceProxyKey;
 
 - (void)setJWCDataSource:(id <UITableViewDataSource>)dataSource {
     if (dataSource == nil) return;
-    JWCTableViewDataSourceProxy *proxy = [JWCTableViewDataSourceProxy proxyWithDataSource:dataSource];
+    JWCTableViewDataSourceProxy *proxy;
+    if ([dataSource isKindOfClass:[JWCTableViewDataSourceProxy class]]) {
+        proxy = dataSource;
+    }else {
+        proxy = [JWCTableViewDataSourceProxy proxyWithDataSource:dataSource];
+    }
     proxy.tableView = self;
     proxy.jwc_data = [self jwc_innerData];
     objc_setAssociatedObject(self, &jwc_datasourceProxyKey, proxy, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     [self setJWCDataSource:proxy];
-}
-
-- (void)setProxyDataSource:(JWCTableViewDataSourceProxy *)dataSource {
-    objc_setAssociatedObject(self, &jwc_datasourceProxyKey, dataSource, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-    dataSource.tableView = self;
-    dataSource.jwc_data = [self jwc_innerData];
-    [self setJWCDataSource:(id <UITableViewDataSource>) dataSource];
-}
-
-- (void)setProxyDelegate:(JWCTableViewDelegateProxy *)delegate {
-    objc_setAssociatedObject(self, &jwc_delegateProxyKey, delegate, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-    delegate.tableView = self;
-    delegate.jwc_data = [self jwc_innerData];
-    [self setJWCDelegate:(id <UITableViewDelegate>) delegate];
 }
 
 - (id <UITableViewDataSource>)dataSource {

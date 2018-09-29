@@ -8,7 +8,7 @@
 
 #import "JWCTableViewController.h"
 #import "JWCTableViewCellData.h"
-#import "JWCTableViewControllerDelegate.h"
+#import "JWCTableViewProtocol.h"
 #import "UITableView+JWC.h"
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wprotocol"

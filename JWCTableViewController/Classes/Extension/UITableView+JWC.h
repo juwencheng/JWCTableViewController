@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "JWCTableViewControllerDelegate.h"
+#import "JWCTableViewProtocol.h"
 
 @class JWCTableViewDataSourceProxy;
 @class JWCTableViewDelegateProxy;
@@ -49,10 +49,6 @@
 - (void)registerReuseCellClass:(Class)cellClass withCellDataClass:(Class)cellDataClass;
 
 - (void)registerReuseNibCellClass:(Class)cellClass withCellDataClass:(Class)cellDataClass;
-
-- (void)setProxyDelegate:(JWCTableViewDelegateProxy *)delegate;
-
-- (void)setProxyDataSource:(JWCTableViewDataSourceProxy *)dataSource;
 
 @property(nonatomic, strong, readonly) NSArray<id <JWCTableViewSectionDataProtocol>> *jwc_data;
 

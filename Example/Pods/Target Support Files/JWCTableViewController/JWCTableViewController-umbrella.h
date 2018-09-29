@@ -18,7 +18,7 @@
 #import "JWCTableViewSectionData.h"
 #import "UITableView+JWC.h"
 #import "UITableViewCell+JWC.h"
-#import "JWCTableViewControllerDelegate.h"
+#import "JWCTableViewProtocol.h"
 #import "JWCTableViewDataSourceProxy.h"
 #import "JWCTableViewDelegateProxy.h"
 #import "JWCTableViewNoReuseDataSourceProxy.h"

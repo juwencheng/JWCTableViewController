@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "JWCTableViewControllerDelegate.h"
+#import "JWCTableViewProtocol.h"
 
 @interface JWCTableViewCellData : NSObject <JWCTableViewCellDataProtocol>
 

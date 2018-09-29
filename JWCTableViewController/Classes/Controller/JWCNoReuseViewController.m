@@ -54,7 +54,7 @@
 - (void)configureTableView {
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.delegate = self;
-    [self.tableView setProxyDataSource: [JWCTableViewNoReuseDataSourceProxy proxyWithDataSource:self]];
+    self.tableView.dataSource = [JWCTableViewNoReuseDataSourceProxy proxyWithDataSource:self];
 }
 
 - (UITableView *)tableView {
