@@ -10,6 +10,7 @@
 typedef void (^JWCTableViewCellTapOperation)(NSIndexPath *indexPath);
 
 @protocol JWCTableViewCellDataProtocol<NSObject>
+@required
 /**
  * cell 的高度，可以重写后在get方法中计算，
  */
@@ -20,6 +21,7 @@ typedef void (^JWCTableViewCellTapOperation)(NSIndexPath *indexPath);
  */
 @property(nonatomic, copy) JWCTableViewCellTapOperation operation;
 
+@optional
 /**
  * 预渲染，计算cell高度
  */
@@ -28,6 +30,9 @@ typedef void (^JWCTableViewCellTapOperation)(NSIndexPath *indexPath);
 
 
 @protocol JWCTableViewSectionDataProtocol<NSObject>
+
+- (NSArray<id<JWCTableViewSectionDataProtocol>> *)convertChildrenToSectionData;
+
 /**
  * 获取 cellHeight
  * @param index cellHeight
@@ -75,5 +80,6 @@ typedef void (^JWCTableViewCellTapOperation)(NSIndexPath *indexPath);
  * section 下面的数据
  */
 @property(nonatomic, strong) NSArray<id<JWCTableViewCellDataProtocol>> *children;
+
 
 @end

@@ -18,47 +18,33 @@ static const void *jwc_datasourceProxyKey = &jwc_datasourceProxyKey;
 
 @implementation UITableView (JWC)
 
-+ (void)load {
-    // 交换 setDelegate 方法
-    Method method = class_getInstanceMethod([self class], @selector(setDelegate:));
-    Method exchangedMethod = class_getInstanceMethod([self class], @selector(setJWCDelegate:));
-    method_exchangeImplementations(method, exchangedMethod);
 
-    Method dataSourceMethod = class_getInstanceMethod([self class], @selector(setDataSource:));
-    Method exchangedDataSourceMethod = class_getInstanceMethod([self class], @selector(setJWCDataSource:));
-    method_exchangeImplementations(dataSourceMethod, exchangedDataSourceMethod);
-}
-
-- (void)setJWCDelegate:(id <UITableViewDelegate>)delegate {
-    if (delegate == nil) return;
-    JWCTableViewDelegateProxy *proxy;
-    if ([delegate isKindOfClass:[JWCTableViewDelegateProxy class]]) {
-        proxy = delegate;
-    }else {
-        proxy = [JWCTableViewDelegateProxy proxyWithDelegate:delegate];
+- (void)setProxyDataSource:(JWCTableViewDataSourceProxy *)proxyDataSource {
+    if (proxyDataSource == nil) return;
+    if ([proxyDataSource isKindOfClass:[JWCTableViewDataSourceProxy class]]) {
+        proxyDataSource.tableView = self;
+        proxyDataSource.jwc_data = [self jwc_innerData];
+        objc_setAssociatedObject(self, &jwc_datasourceProxyKey, proxyDataSource, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+        [self setDataSource:proxyDataSource];
     }
-    proxy.tableView = self;
-    proxy.jwc_data = [self jwc_innerData];
-    objc_setAssociatedObject(self, &jwc_delegateProxyKey, proxy, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-    [self setJWCDelegate:proxy];
 }
 
-- (void)setJWCDataSource:(id <UITableViewDataSource>)dataSource {
-    if (dataSource == nil) return;
-    JWCTableViewDataSourceProxy *proxy;
-    if ([dataSource isKindOfClass:[JWCTableViewDataSourceProxy class]]) {
-        proxy = dataSource;
-    }else {
-        proxy = [JWCTableViewDataSourceProxy proxyWithDataSource:dataSource];
+- (void)setProxyDelegate:(JWCTableViewDelegateProxy *)proxyDelegate {
+    if (proxyDelegate == nil) return;
+    if ([proxyDelegate isKindOfClass:[JWCTableViewDelegateProxy class]]) {
+        proxyDelegate.tableView = self;
+        proxyDelegate.jwc_data = [self jwc_innerData];
+        objc_setAssociatedObject(self, &jwc_delegateProxyKey, proxyDelegate, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+        [self setDelegate:proxyDelegate];
     }
-    proxy.tableView = self;
-    proxy.jwc_data = [self jwc_innerData];
-    objc_setAssociatedObject(self, &jwc_datasourceProxyKey, proxy, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-    [self setJWCDataSource:proxy];
 }
 
-- (id <UITableViewDataSource>)dataSource {
-    return [self jwc_datasourceProxy];
+- (JWCTableViewDelegateProxy *)proxyDelegate {
+    return objc_getAssociatedObject(self, &jwc_delegateProxyKey);
+}
+
+- (JWCTableViewDataSourceProxy *)proxyDataSource {
+    return objc_getAssociatedObject(self, &jwc_datasourceProxyKey);
 }
 
 - (void)reloadData:(NSArray<id <JWCTableViewSectionDataProtocol>> *)data {

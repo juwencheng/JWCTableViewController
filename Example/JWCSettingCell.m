@@ -7,18 +7,16 @@
 //
 
 #import "JWCSettingCell.h"
-#import "JWCSettingCellItem.h"
+#import "JWCSettingCellData.h"
 
 @implementation JWCSettingCell {
     UISwitch *_switch;
-    CGFloat _rowHeight;
-    JWCTableViewCellTapOperation _operation;
 }
 @synthesize rowHeight = _rowHeight;
 @synthesize operation = _operation;
 
 - (void)configureData:(JWCTableViewCellData *)cellData {
-    JWCSettingCellItem *data = (JWCSettingCellItem *) cellData;
+    JWCSettingCellData *data = (JWCSettingCellData *) cellData;
     [super configureData:data];
     if (data.icon) {
         self.imageView.image = [UIImage imageNamed:data.icon];

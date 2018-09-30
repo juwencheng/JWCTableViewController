@@ -6,10 +6,10 @@
 //  Copyright (c) 2014年 dono. All rights reserved.
 //
 
-#import "JWCSettingCellItem.h"
+#import "JWCSettingCellData.h"
 #import "JWCSettingCell.h"
 
-@implementation JWCSettingCellItem
+@implementation JWCSettingCellData
 
 
 

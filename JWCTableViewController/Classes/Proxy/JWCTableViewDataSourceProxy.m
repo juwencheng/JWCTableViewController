@@ -39,7 +39,7 @@
 
 // 可以在这里控制允许哪些方法能够让delegate实现
 - (id)forwardingTargetForSelector:(SEL)aSelector {
-    return [self.forwardSelectorStrings containsObject:NSStringFromSelector(aSelector)] ? self.dataSource : self;
+    return [self.forwardSelectorStrings containsObject:NSStringFromSelector(aSelector)] ? self.dataSource : [super forwardingTargetForSelector:aSelector];
 }
 
 - (UITableViewCell *)dequeueCellWithClassStr:(NSString *)cellClassStr {
@@ -76,7 +76,7 @@
 
 - (void)dealloc {
 #ifdef DEBUG
-    NSLog(@"proxy 被释放了");
+//    NSLog(@"proxy 被释放了");
 #endif
 }
 

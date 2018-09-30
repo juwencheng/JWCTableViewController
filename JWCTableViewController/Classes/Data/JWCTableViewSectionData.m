@@ -46,6 +46,23 @@
     return data;
 }
 
+- (NSArray<id<JWCTableViewSectionDataProtocol>> *)convertChildrenToSectionData {
+    NSMutableArray *sections = [NSMutableArray array];
+    for (id<JWCTableViewCellDataProtocol> data in self.children) {
+        JWCTableViewSectionData *section = [[JWCTableViewSectionData alloc] init];
+        section.rowHeight = self.rowHeight;
+        section.headerTitle = self.headerTitle;
+        section.headerViewHeight = self.headerViewHeight;
+        section.headerView = _headerView; // 因为是lazy property，没有此时触发
+        section.footerView = _footerView; // 因为是lazy property，没有此时触发
+        section.footerTitle = self.footerTitle;
+        section.footerViewHeight = self.footerViewHeight;
+        section.children = @[data];
+        [sections addObject:section];
+    }
+    return [sections copy];
+}
+
 - (UIView *)headerView {
     if (!_headerView) {
         UILabel *label = [UILabel new];

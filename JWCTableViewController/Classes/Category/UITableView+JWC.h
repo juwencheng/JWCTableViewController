@@ -48,7 +48,18 @@
 
 - (void)registerReuseCellClass:(Class)cellClass withCellDataClass:(Class)cellDataClass;
 
+
 - (void)registerReuseNibCellClass:(Class)cellClass withCellDataClass:(Class)cellDataClass;
+
+/**
+ * proxyDelete，避免和 delegate 冲突，传入类型为 JWCTableViewDelegateProxy，其他类型会忽略
+ */
+@property(nonatomic, strong) JWCTableViewDelegateProxy *proxyDelegate;
+
+/**
+ * proxyDataSource，避免和 datasource 冲突，传入类型为 JWCTableViewDataSourceProxy，其他类型会忽略
+ */
+@property(nonatomic, strong) JWCTableViewDataSourceProxy *proxyDataSource;
 
 @property(nonatomic, strong, readonly) NSArray<id <JWCTableViewSectionDataProtocol>> *jwc_data;
 

@@ -32,7 +32,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 3. 构造数据类型
 实现时将`grouped` 和 `plain` 两种情况统一处理，因此至少需要一个 `JWCTableViewSectionData` 数据，在不需要 `section` 的时候也需要创建一个 `section`。
 ```oc
-JWCSettingCellItem *item1 = [[JWCSettingCellItem alloc] init];
+JWCSettingCellData *item1 = [[JWCSettingCellData alloc] init];
     item1.title = @"开奖号码推送";
     item1.style = JWCSettingCellItemStyleArraw;
     item1.operation = ^(NSIndexPath *indexPath) {
@@ -40,11 +40,11 @@ JWCSettingCellItem *item1 = [[JWCSettingCellItem alloc] init];
     };
 
 
-    JWCSettingCellItem *item2 = [[JWCSettingCellItem alloc] init];
+    JWCSettingCellData *item2 = [[JWCSettingCellData alloc] init];
     item2.title = @"中奖动画";
     item2.style = JWCSettingCellItemStyleNone;
 
-    JWCSettingCellItem *item3 = [[JWCSettingCellItem alloc] init];
+    JWCSettingCellData *item3 = [[JWCSettingCellData alloc] init];
     item3.title = @"购彩票定时提醒";
     item3.style = JWCSettingCellItemStyleSwitch;
 
@@ -54,7 +54,7 @@ JWCSettingCellItem *item1 = [[JWCSettingCellItem alloc] init];
     group.header = @"测试title";
     [self reloadData:@[group]];
 ```
-注意 `JWCSettingCellItem` 是继承自 `JWCTableViewCellData`。
+注意 `JWCSettingCellData` 是继承自 `JWCTableViewCellData`。
 
 4. 刷新列表，提供了以下几个方法刷新列表数据
 

@@ -8,7 +8,7 @@
 
 #import "JWCAppDelegate.h"
 #import "JWCSettingViewController.h"
-
+#import "JWCViewController.h"
 
 @implementation JWCAppDelegate
 

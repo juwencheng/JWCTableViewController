@@ -15,7 +15,7 @@ typedef enum : NSUInteger {
     JWCSettingCellItemStyleSwitch,
 } JWCSettingCellItemStyle;
 
-@interface JWCSettingCellItem : JWCTableViewCellData
+@interface JWCSettingCellData : JWCTableViewCellData
 
 @property(nonatomic, copy) NSString *title;
 @property(nonatomic, copy) NSString *icon;

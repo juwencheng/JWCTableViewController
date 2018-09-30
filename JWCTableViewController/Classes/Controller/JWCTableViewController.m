@@ -10,7 +10,9 @@
 #import "JWCTableViewCellData.h"
 #import "JWCTableViewProtocol.h"
 #import "UITableView+JWC.h"
-#pragma GCC diagnostic push
+#import "JWCTableViewDelegateProxy.h"
+#import "JWCTableViewDataSourceProxy.h"
+//#pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wprotocol"
 @interface JWCTableViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic, strong, readwrite) UITableView *tableView;
@@ -51,17 +53,18 @@
 }
 
 - (void)configureTableView {
-    self.tableView.delegate = self;
-    self.tableView.dataSource = self;
-    self.tableView.tableFooterView = [UIView new];
+    self.tableView.proxyDelegate = [JWCTableViewDelegateProxy proxyWithDelegate:self];
+    self.tableView.proxyDataSource = [JWCTableViewDataSourceProxy proxyWithDataSource:self];
 }
 
 - (UITableView *)tableView {
     if (!_tableView) {
         _tableView = [[UITableView alloc] initWithFrame:CGRectZero style:_tableViewStyle];
+        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        _tableView.tableFooterView = [UIView new];
     }
     return _tableView;
 }
 
 @end
-#pragma GCC diagnostic pop
+//#pragma GCC diagnostic pop

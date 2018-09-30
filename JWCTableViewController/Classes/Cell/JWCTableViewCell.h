@@ -12,7 +12,7 @@
 @class JWCTableViewCellData;
 
 // 如果支持范型就好了
-@interface JWCTableViewCell : UITableViewCell
+@interface JWCTableViewCell : UITableViewCell<JWCTableViewCellDataProtocol>
 
 - (void)commonInit;
 

@@ -8,6 +8,6 @@
 
 #import <JWCTableViewController/JWCTableViewCell.h>
 #import <JWCTableViewController/UITableViewCell+JWC.h>
-@interface JWCSettingCell : UITableViewCell<JWCTableViewCellDataProtocol>
+@interface JWCSettingCell : JWCTableViewCell
 
 @end

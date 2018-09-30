@@ -8,8 +8,9 @@
 
 #import "JWCNoReuseViewController.h"
 #import "JWCTableViewSectionCell.h"
+#import "JWCTableViewDelegateProxy.h"
 #import "JWCTableViewNoReuseDataSourceProxy.h"
-#pragma GCC diagnostic push
+//#pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wprotocol"
 @interface JWCNoReuseViewController ()<UITableViewDataSource, UITableViewDelegate>
 
@@ -52,14 +53,15 @@
 }
 
 - (void)configureTableView {
-    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    self.tableView.delegate = self;
-    self.tableView.dataSource = [JWCTableViewNoReuseDataSourceProxy proxyWithDataSource:self];
+    self.tableView.proxyDelegate = [JWCTableViewDelegateProxy proxyWithDelegate:self];
+    self.tableView.proxyDataSource = [JWCTableViewNoReuseDataSourceProxy proxyWithDataSource:self];
 }
 
 - (UITableView *)tableView {
     if (!_tableView) {
         _tableView = [[UITableView alloc] initWithFrame:CGRectZero style:_tableViewStyle];
+        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        _tableView.tableFooterView = [UIView new];
     }
     return _tableView;
 }
@@ -67,4 +69,4 @@
 
 
 @end
-#pragma GCC diagnostic pop
+//#pragma GCC diagnostic pop

@@ -34,4 +34,6 @@
 - (id <JWCTableViewCellDataProtocol>)data {
     return _data;
 }
+@synthesize rowHeight;
+@synthesize operation;
 @end

@@ -10,14 +10,14 @@
 #endif
 #endif
 
+#import "UITableView+JWC.h"
+#import "UITableViewCell+JWC.h"
 #import "JWCTableViewCell.h"
 #import "JWCTableViewSectionCell.h"
 #import "JWCNoReuseViewController.h"
 #import "JWCTableViewController.h"
 #import "JWCTableViewCellData.h"
 #import "JWCTableViewSectionData.h"
-#import "UITableView+JWC.h"
-#import "UITableViewCell+JWC.h"
 #import "JWCTableViewProtocol.h"
 #import "JWCTableViewDataSourceProxy.h"
 #import "JWCTableViewDelegateProxy.h"
