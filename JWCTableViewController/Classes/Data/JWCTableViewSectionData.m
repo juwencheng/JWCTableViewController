@@ -74,6 +74,10 @@
     return _headerView;
 }
 
+- (void)setHeaderView:(UIView *)headerView {
+    _headerView = headerView;
+}
+
 - (UIView *)footerView {
     if (!_footerView) {
         UILabel *label = [UILabel new];
@@ -83,6 +87,10 @@
         _footerView = label;
     }
     return _footerView;
+}
+
+- (void)setFooterView:(UIView *)footerView {
+    _footerView = footerView;
 }
 
 - (CGFloat)heightForRowAtIndex:(NSInteger)index {
