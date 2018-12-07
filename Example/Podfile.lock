@@ -1,5 +1,5 @@
 PODS:
-  - JWCTableViewController (0.5.1)
+  - JWCTableViewController (0.5.3)
 
 DEPENDENCIES:
   - JWCTableViewController (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  JWCTableViewController: e016783bc5890d8302368df8f59b017a3c11a686
+  JWCTableViewController: 9ee02770722b1327f04bcef56e8c88bbf9b1d839
 
 PODFILE CHECKSUM: 8ab98d11f4bbc629a87cc434bde7a9603eacd90a
 
